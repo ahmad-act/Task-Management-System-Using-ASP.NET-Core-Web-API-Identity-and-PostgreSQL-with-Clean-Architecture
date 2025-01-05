@@ -1,0 +1,2018 @@
+------ Request Log ------
+Timestamp: 2024-11-12T18:11:37.1455193Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2024-11-12T18:27:07.9052896Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2024-11-12T18:31:55.9515062Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2024-11-12T18:39:14.9752027Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2024-11-12T18:40:13.1169764Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/users/login
+Request Data:
+{
+  "username": "string",
+  "password": "string"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2024-11-12T18:42:19.9646853Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2024-11-12T18:42:29.4693518Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/users/login
+Request Data:
+{
+  "username": "string",
+  "password": "string"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2024-11-12T18:43:06.0977606Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/users/login
+Request Data:
+{
+  "username": "admin",
+  "password": "Admin!123"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2024-11-12T18:43:34.8111194Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2024-11-12T18:49:02.5663390Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/users
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2024-11-12T18:49:17.2495737Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/users/login
+Request Data:
+{
+  "username": "admin",
+  "password": "Admin!123"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2024-11-12T18:49:26.0758150Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/users
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2024-11-12T18:49:40.3235580Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2024-11-12T18:50:08.1697718Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2024-11-18T14:45:59.4026301Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/users
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-02T22:17:04.2738568Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-02T22:17:04.3193642Z
+Sender: 127.0.0.1
+Method: GET
+URI: /Account/Login?ReturnUrl=%2Fapi%2Fv1%2Fentity-prototypes
+Request Data:
+?ReturnUrl=%2Fapi%2Fv1%2Fentity-prototypes
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T16:21:01.1214595Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T16:21:01.2983098Z
+Sender: 127.0.0.1
+Method: GET
+URI: /Account/Login?ReturnUrl=%2Fapi%2Fv1%2Fapp-users
+Request Data:
+?ReturnUrl=%2Fapi%2Fv1%2Fapp-users
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T16:26:53.7213151Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T16:26:53.8085658Z
+Sender: 127.0.0.1
+Method: GET
+URI: /Account/Login?ReturnUrl=%2Fapi%2Fv1%2Fapp-users
+Request Data:
+?ReturnUrl=%2Fapi%2Fv1%2Fapp-users
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T16:27:25.6999131Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T16:27:25.7532944Z
+Sender: 127.0.0.1
+Method: GET
+URI: /Account/Login?ReturnUrl=%2Fapi%2Fv1%2Fapp-users
+Request Data:
+?ReturnUrl=%2Fapi%2Fv1%2Fapp-users
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T16:39:57.8981758Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T16:39:58.0451618Z
+Sender: 127.0.0.1
+Method: GET
+URI: /Account/Login?ReturnUrl=%2Fapi%2Fv1%2Fapp-users
+Request Data:
+?ReturnUrl=%2Fapi%2Fv1%2Fapp-users
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T16:41:51.0745082Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T16:41:51.1064257Z
+Sender: 127.0.0.1
+Method: GET
+URI: /Account/Login?ReturnUrl=%2Fapi%2Fv1%2Fapp-users
+Request Data:
+?ReturnUrl=%2Fapi%2Fv1%2Fapp-users
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T16:42:19.8179759Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T16:42:19.8351376Z
+Sender: 127.0.0.1
+Method: GET
+URI: /Account/Login?ReturnUrl=%2Fapi%2Fv1%2Fapp-users
+Request Data:
+?ReturnUrl=%2Fapi%2Fv1%2Fapp-users
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T16:42:20.6702533Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T16:42:20.6757956Z
+Sender: 127.0.0.1
+Method: GET
+URI: /Account/Login?ReturnUrl=%2Fapi%2Fv1%2Fapp-users
+Request Data:
+?ReturnUrl=%2Fapi%2Fv1%2Fapp-users
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T16:42:38.0585375Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T16:42:38.0657431Z
+Sender: 127.0.0.1
+Method: GET
+URI: /Account/Login?ReturnUrl=%2Fapi%2Fv1%2Fentity-prototypes
+Request Data:
+?ReturnUrl=%2Fapi%2Fv1%2Fentity-prototypes
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T16:43:53.2322685Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T16:43:53.2438294Z
+Sender: 127.0.0.1
+Method: GET
+URI: /Account/Login?ReturnUrl=%2Fapi%2Fv1%2Fentity-prototypes
+Request Data:
+?ReturnUrl=%2Fapi%2Fv1%2Fentity-prototypes
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T16:44:55.5212779Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T16:44:55.9299968Z
+Sender: 127.0.0.1
+Method: GET
+URI: /Account/Login?ReturnUrl=%2Fapi%2Fv1%2Fapp-users
+Request Data:
+?ReturnUrl=%2Fapi%2Fv1%2Fapp-users
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T16:45:42.5010332Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T16:45:42.5203523Z
+Sender: 127.0.0.1
+Method: GET
+URI: /Account/Login?ReturnUrl=%2Fapi%2Fv1%2Fapp-users
+Request Data:
+?ReturnUrl=%2Fapi%2Fv1%2Fapp-users
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T16:45:43.1279291Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T16:45:43.1366194Z
+Sender: 127.0.0.1
+Method: GET
+URI: /Account/Login?ReturnUrl=%2Fapi%2Fv1%2Fapp-users
+Request Data:
+?ReturnUrl=%2Fapi%2Fv1%2Fapp-users
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T16:45:43.5748999Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T16:45:43.5818655Z
+Sender: 127.0.0.1
+Method: GET
+URI: /Account/Login?ReturnUrl=%2Fapi%2Fv1%2Fapp-users
+Request Data:
+?ReturnUrl=%2Fapi%2Fv1%2Fapp-users
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T16:45:43.7960955Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T16:45:43.8009914Z
+Sender: 127.0.0.1
+Method: GET
+URI: /Account/Login?ReturnUrl=%2Fapi%2Fv1%2Fapp-users
+Request Data:
+?ReturnUrl=%2Fapi%2Fv1%2Fapp-users
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T16:46:07.2467077Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T16:46:07.2531883Z
+Sender: 127.0.0.1
+Method: GET
+URI: /Account/Login?ReturnUrl=%2Fapi%2Fv1%2Fentity-prototypes
+Request Data:
+?ReturnUrl=%2Fapi%2Fv1%2Fentity-prototypes
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T16:48:41.3875496Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T16:48:41.4549667Z
+Sender: 127.0.0.1
+Method: GET
+URI: /Account/Login?ReturnUrl=%2Fapi%2Fv1%2Fentity-prototypes
+Request Data:
+?ReturnUrl=%2Fapi%2Fv1%2Fentity-prototypes
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T16:51:54.2618726Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T16:51:54.4188868Z
+Sender: 127.0.0.1
+Method: GET
+URI: /Account/Login?ReturnUrl=%2Fapi%2Fv1%2Fentity-prototypes
+Request Data:
+?ReturnUrl=%2Fapi%2Fv1%2Fentity-prototypes
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T16:55:50.0201414Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T16:55:50.2295184Z
+Sender: 127.0.0.1
+Method: GET
+URI: /Account/Login?ReturnUrl=%2Fapi%2Fv1%2Fentity-prototypes
+Request Data:
+?ReturnUrl=%2Fapi%2Fv1%2Fentity-prototypes
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T16:56:27.6261402Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T16:56:27.7674552Z
+Sender: 127.0.0.1
+Method: GET
+URI: /Account/Login?ReturnUrl=%2Fapi%2Fv1%2Fentity-prototypes
+Request Data:
+?ReturnUrl=%2Fapi%2Fv1%2Fentity-prototypes
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T17:03:16.1963835Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/EntityPrototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T17:03:16.2611743Z
+Sender: 127.0.0.1
+Method: GET
+URI: /Account/Login?ReturnUrl=%2Fapi%2Fv1%2FEntityPrototypes
+Request Data:
+?ReturnUrl=%2Fapi%2Fv1%2FEntityPrototypes
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T17:03:35.6473344Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/EntityPrototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T17:03:35.6552718Z
+Sender: 127.0.0.1
+Method: GET
+URI: /Account/Login?ReturnUrl=%2Fapi%2Fv1%2FEntityPrototypes
+Request Data:
+?ReturnUrl=%2Fapi%2Fv1%2FEntityPrototypes
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T17:04:26.7398338Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/EntityPrototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T17:04:26.8752153Z
+Sender: 127.0.0.1
+Method: GET
+URI: /Account/Login?ReturnUrl=%2Fapi%2Fv1%2FEntityPrototypes
+Request Data:
+?ReturnUrl=%2Fapi%2Fv1%2FEntityPrototypes
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T17:05:58.1867495Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/EntityPrototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T17:07:28.0530859Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T22:06:57.7355447Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T22:09:56.2181942Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T22:14:52.3202757Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T22:17:52.7449984Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T22:20:00.3179154Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T22:22:24.8766802Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T22:22:50.6358511Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T22:26:00.8847877Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T22:26:19.3818812Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/entity-prototypes
+Request Data:
+{
+  "roleSerial": 1000,
+  "userAccessLevel": 1000,
+  "fieldName": "string",
+  "fieldDescription": "string"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T22:29:38.8212250Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T22:30:40.7447675Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/entity-prototypes
+Request Data:
+{
+  "roleSerial": 1000,
+  "userAccessLevel": 1000,
+  "fieldName": "string",
+  "fieldDescription": "string"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T23:06:32.9392830Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T23:07:05.9437821Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/entity-prototypes
+Request Data:
+{
+  "userDataAccessLevel": 0,
+  "fieldName": "string",
+  "fieldDescription": "string"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T23:07:25.9526102Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/entity-prototypes
+Request Data:
+{
+  "userDataAccessLevel": 0,
+  "fieldName": "string",
+  "fieldDescription": "string"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T23:07:44.2812811Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/entity-prototypes
+Request Data:
+{
+  "userDataAccessLevel": 0,
+  "fieldName": "string",
+  "fieldDescription": "string"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T23:09:09.8753024Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/entity-prototypes
+Request Data:
+{
+  "userDataAccessLevel": 0,
+  "fieldName": "string",
+  "fieldDescription": "string"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T23:10:09.1975891Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T23:13:50.6142426Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T23:14:14.2973086Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/entity-prototypes
+Request Data:
+{
+  "userDataAccessLevel": 0,
+  "fieldName": "string",
+  "fieldDescription": "string"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T23:15:08.0005277Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T23:15:25.1054627Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/entity-prototypes
+Request Data:
+{
+  "userDataAccessLevel": 0,
+  "fieldName": "string",
+  "fieldDescription": "string"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T23:16:03.1623666Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T23:20:20.2885106Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T23:20:39.7104099Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T23:27:11.3601225Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T23:28:54.7225499Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/entity-prototypes
+Request Data:
+{
+  "userDataAccessLevel": 0,
+  "fieldName": "string1",
+  "fieldDescription": "string1"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T23:29:10.3563673Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T23:31:45.5026894Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T23:33:42.0520829Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes?page=1&pageSize=1
+Request Data:
+?page=1&pageSize=1
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T23:35:38.1282246Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T23:38:09.3756676Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T23:40:46.5853348Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T23:51:36.2340460Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T23:52:09.3507157Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes?page=1
+Request Data:
+?page=1
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T23:52:32.7135130Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes?pageSize=2
+Request Data:
+?pageSize=2
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T23:52:47.1366560Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes?page=1&pageSize=2
+Request Data:
+?page=1&pageSize=2
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T23:53:05.8514215Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes?page=1&pageSize=1
+Request Data:
+?page=1&pageSize=1
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T23:54:02.5235063Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes?page=1&pageSize=2
+Request Data:
+?page=1&pageSize=2
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T23:54:28.5816964Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes?page=1&pageSize=3
+Request Data:
+?page=1&pageSize=3
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T23:54:44.9688763Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T23:56:40.3484180Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T23:57:25.1203903Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes/3b6433d3-1e99-4f9c-a047-303b8fc0c7d5
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T23:59:25.2922382Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes/3b6433d3-1e99-4f9c-a047-303b8fc0c7d5
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-03T23:59:55.9090214Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/entity-prototypes/3b6433d3-1e99-4f9c-a047-303b8fc0c7d5
+Request Data:
+{
+  "userDataAccessLevel": 0,
+  "fieldName": "string222",
+  "fieldDescription": "string22"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T00:00:11.6863039Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes/3b6433d3-1e99-4f9c-a047-303b8fc0c7d5
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T00:00:29.5648977Z
+Sender: 127.0.0.1
+Method: DELETE
+URI: /api/v1/entity-prototypes/3b6433d3-1e99-4f9c-a047-303b8fc0c7d5
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T00:00:53.7552873Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/entity-prototypes/3b6433d3-1e99-4f9c-a047-303b8fc0c7d5
+Request Data:
+{
+  "userDataAccessLevel": 0,
+  "fieldName": "string222",
+  "fieldDescription": "string22"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T00:01:23.9979829Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes/3b6433d3-1e99-4f9c-a047-303b8fc0c7d5
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T00:01:35.3179594Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/entity-prototypes/3b6433d3-1e99-4f9c-a047-303b8fc0c7d5
+Request Data:
+{
+  "userDataAccessLevel": 0,
+  "fieldName": "string222",
+  "fieldDescription": "string22"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T00:01:46.3883819Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/entity-prototypes/3b6433d3-1e99-4f9c-a047-303b8fc0c7d5
+Request Data:
+{
+  "userDataAccessLevel": 0,
+  "fieldName": "string222",
+  "fieldDescription": "string22"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T00:07:49.2739405Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/entity-prototypes/3b6433d3-1e99-4f9c-a047-303b8fc0c7d5
+Request Data:
+{
+  "userDataAccessLevel": 0,
+  "fieldName": "string",
+  "fieldDescription": "string"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T00:08:51.5783932Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/entity-prototypes/3b6433d3-1e99-4f9c-a047-303b8fc0c7d5
+Request Data:
+{
+  "userDataAccessLevel": 0,
+  "fieldName": "string",
+  "fieldDescription": "string"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T00:23:04.8250657Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes/result
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T00:23:26.4834725Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T00:23:46.7414334Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes/3f812d60-de11-47c4-b299-c4e9e3da27ba
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T00:31:27.7174000Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T00:56:00.7518658Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T00:56:23.2486453Z
+Sender: 127.0.0.1
+Method: DELETE
+URI: /api/v1/entity-prototypes/3f812d60-de11-47c4-b299-c4e9e3da27ba
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T15:20:37.2945120Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/app-users/login
+Request Data:
+{
+  "userName": "string",
+  "password": "string",
+  "rememberMe": true
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T15:21:09.8068699Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/app-users/login
+Request Data:
+{
+  "userName": "superadmin",
+  "password": "Admin!123",
+  "rememberMe": true
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T15:32:54.3199422Z
+Sender: 127.0.0.1
+Method: GET
+URI: /manage/info
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T15:32:54.3674266Z
+Sender: 127.0.0.1
+Method: GET
+URI: /Identity/Account/Login?ReturnUrl=%2Fmanage%2Finfo
+Request Data:
+?ReturnUrl=%2Fmanage%2Finfo
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T15:34:46.4697593Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/app-users
+Request Data:
+{
+  "userDataAccessLevel": 0,
+  "userName": "string",
+  "password": "string",
+  "email": "string",
+  "roles": [
+    "string"
+  ],
+  "claims": [
+    {
+      "subject": {
+        "actor": "string",
+        "bootstrapContext": "string",
+        "label": "string"
+      }
+    }
+  ],
+  "policyNames": [
+    "string"
+  ],
+  "firstName": "string",
+  "lastName": "string"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T15:34:55.4987975Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T15:35:37.3005514Z
+Sender: 127.0.0.1
+Method: POST
+URI: /login?useCookies=true&useSessionCookies=false
+Request Data:
+{
+  "email": "superadmin@example.com",
+  "password": "Admin!123",
+  "twoFactorCode": "string",
+  "twoFactorRecoveryCode": "string"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T15:36:05.2322020Z
+Sender: 127.0.0.1
+Method: POST
+URI: /register
+Request Data:
+{
+  "email": "superadmin1@example.com",
+  "password": "string"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T15:36:21.8027765Z
+Sender: 127.0.0.1
+Method: POST
+URI: /register
+Request Data:
+{
+  "email": "superadmin1@example.com",
+  "password": "Admin!123"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T15:36:33.6589644Z
+Sender: 127.0.0.1
+Method: POST
+URI: /login?useCookies=true&useSessionCookies=false
+Request Data:
+{
+  "email": "superadmin1@example.com",
+  "password": "Admin!123",
+  "twoFactorCode": "string",
+  "twoFactorRecoveryCode": "string"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T15:37:18.5521461Z
+Sender: 127.0.0.1
+Method: POST
+URI: /login?useCookies=true&useSessionCookies=false
+Request Data:
+{
+  "email": "superadmin1@example.com",
+  "password": "Admin!123",
+  "twoFactorCode": "string",
+  "twoFactorRecoveryCode": "string"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T15:37:32.6813504Z
+Sender: 127.0.0.1
+Method: POST
+URI: /login?useCookies=false&useSessionCookies=false
+Request Data:
+{
+  "email": "superadmin1@example.com",
+  "password": "Admin!123",
+  "twoFactorCode": "string",
+  "twoFactorRecoveryCode": "string"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T15:42:39.8309560Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T15:43:18.7171590Z
+Sender: 127.0.0.1
+Method: POST
+URI: /login?useCookies=false&useSessionCookies=false
+Request Data:
+{
+  "email": "superadmin1@example.com",
+  "password": "Admin!123",
+  "twoFactorCode": "string",
+  "twoFactorRecoveryCode": "string"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T15:44:48.6098136Z
+Sender: 127.0.0.1
+Method: POST
+URI: /login?useCookies=true&useSessionCookies=false
+Request Data:
+{
+  "email": "superadmin1@example.com",
+  "password": "Admin!123",
+  "twoFactorCode": "string",
+  "twoFactorRecoveryCode": "string"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T15:44:59.8793083Z
+Sender: 127.0.0.1
+Method: POST
+URI: /login?useCookies=false&useSessionCookies=false
+Request Data:
+{
+  "email": "superadmin1@example.com",
+  "password": "Admin!123",
+  "twoFactorCode": "string",
+  "twoFactorRecoveryCode": "string"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T15:45:23.7868889Z
+Sender: 127.0.0.1
+Method: POST
+URI: /login?useCookies=false&useSessionCookies=true
+Request Data:
+{
+  "email": "superadmin1@example.com",
+  "password": "Admin!123",
+  "twoFactorCode": "string",
+  "twoFactorRecoveryCode": "string"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T15:45:31.1319909Z
+Sender: 127.0.0.1
+Method: POST
+URI: /login?useCookies=false&useSessionCookies=false
+Request Data:
+{
+  "email": "superadmin1@example.com",
+  "password": "Admin!123",
+  "twoFactorCode": "string",
+  "twoFactorRecoveryCode": "string"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T15:49:14.0882263Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T15:49:47.5594783Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/app-users/login
+Request Data:
+{
+  "userName": "superadmin1@example.com",
+  "password": "Admin!123",
+  "rememberMe": true
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T15:50:55.1606465Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/app-users/login
+Request Data:
+{
+  "userName": "superadmin1@example.com",
+  "password": "Admin!123",
+  "rememberMe": true
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T16:05:12.3690382Z
+Sender: 127.0.0.1
+Method: GET
+URI: /manage/info
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T16:05:12.4393941Z
+Sender: 127.0.0.1
+Method: GET
+URI: /Identity/Account/Login?ReturnUrl=%2Fmanage%2Finfo
+Request Data:
+?ReturnUrl=%2Fmanage%2Finfo
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T16:05:30.8699726Z
+Sender: 127.0.0.1
+Method: POST
+URI: /manage/info
+Request Data:
+{
+  "newEmail": "string",
+  "newPassword": "string",
+  "oldPassword": "string"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T16:05:30.8837705Z
+Sender: 127.0.0.1
+Method: GET
+URI: /Identity/Account/Login?ReturnUrl=%2Fmanage%2Finfo
+Request Data:
+?ReturnUrl=%2Fmanage%2Finfo
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T23:01:52.9504573Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T23:24:49.8385177Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T23:33:05.2802590Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T23:33:55.8839298Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-04T23:42:59.1691029Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T00:22:02.8777738Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T00:22:32.4211820Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/entity-prototypes
+Request Data:
+{
+  "userDataAccessLevel": 0,
+  "fieldName": "string",
+  "fieldDescription": "string"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T10:12:58.5057373Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T10:13:46.1751458Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/workspaces
+Request Data:
+{
+  "userDataAccessLevel": 0,
+  "fieldName": "w1",
+  "fieldDescription": "w11"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T10:19:52.2238783Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/workspaces
+Request Data:
+{
+  "userDataAccessLevel": 0,
+  "name": "w1",
+  "description": "w11"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T10:21:31.2599814Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/workspaces
+Request Data:
+{
+  "userDataAccessLevel": 0,
+  "name": "w1",
+  "description": "w11"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T10:21:59.1366710Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/workspaces
+Request Data:
+{
+  "userDataAccessLevel": 0,
+  "name": "w1",
+  "description": "w11"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T10:35:03.2171199Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T10:44:13.3771489Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T10:44:43.7698564Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/workspaces
+Request Data:
+{
+  "userDataAccessLevel": 0,
+  "name": "w1",
+  "description": "w11"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T10:49:06.4504150Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/workspaces
+Request Data:
+{
+  "userDataAccessLevel": 0,
+  "name": "w1",
+  "description": "w11"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T10:51:06.2742091Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/workspaces
+Request Data:
+{
+  "userDataAccessLevel": 0,
+  "name": "w2",
+  "description": "w11"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T10:56:38.7354140Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/workspaces
+Request Data:
+{
+  "userDataAccessLevel": 0,
+  "name": "w3",
+  "description": "w33"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T10:57:17.3568987Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T10:58:14.1576797Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces/e656930e-b080-4a99-8411-86411f547e03
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T10:58:54.5452193Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/workspaces/e656930e-b080-4a99-8411-86411f547e03
+Request Data:
+{
+  "userDataAccessLevel": 0,
+  "name": "w12",
+  "description": "w112"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T10:59:11.9846404Z
+Sender: 127.0.0.1
+Method: DELETE
+URI: /api/v1/workspaces/e656930e-b080-4a99-8411-86411f547e03
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T10:59:18.4593002Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/workspaces/e656930e-b080-4a99-8411-86411f547e03
+Request Data:
+{
+  "userDataAccessLevel": 0,
+  "name": "w12",
+  "description": "w112"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T10:59:38.6721094Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces/e656930e-b080-4a99-8411-86411f547e03
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T10:59:54.3845434Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T13:09:05.1893100Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T13:09:35.3432391Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/workspaces
+Request Data:
+{
+  "userDataAccessLevel": 0,
+  "name": "string",
+  "description": "string"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T15:40:03.1122066Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T15:40:32.4400776Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces/4042934d-9eaa-4195-82cb-7aa0f640e82b
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T15:40:50.4019639Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/workspaces/4042934d-9eaa-4195-82cb-7aa0f640e82b
+Request Data:
+{
+  "userDataAccessLevel": 0,
+  "name": "string",
+  "description": "string"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T15:41:20.4686850Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/workspaces
+Request Data:
+{
+  "userDataAccessLevel": 0,
+  "name": "string",
+  "description": "string"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T15:42:15.1975738Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/workspaces
+Request Data:
+{
+  "userDataAccessLevel": 0,
+  "name": "string",
+  "description": "string"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T15:42:38.8929243Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T15:42:56.9600367Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/workspaces
+Request Data:
+{
+  "userDataAccessLevel": 0,
+  "name": "string1",
+  "description": "string"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T15:43:28.0535766Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/workspaces/4042934d-9eaa-4195-82cb-7aa0f640e82b
+Request Data:
+{
+  "userDataAccessLevel": 0,
+  "name": "string1",
+  "description": "string"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T17:00:27.7340268Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T17:08:57.7489343Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/entity-prototypes
+Request Data:
+{
+  "userDataAccessLevel": 0,
+  "name": "string",
+  "description": "string"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T17:10:46.0118389Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/entity-prototypes
+Request Data:
+{
+  "userDataAccessLevel": 0,
+  "name": "string",
+  "description": "string"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T17:11:32.6731066Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/entity-prototypes
+Request Data:
+{
+  "userDataAccessLevel": 0,
+  "name": "string",
+  "description": "string"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T17:12:24.8114812Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/entity-prototypes
+Request Data:
+{
+  "userDataAccessLevel": 0,
+  "name": "a",
+  "description": "a"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T17:14:08.9530074Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/entity-prototypes
+Request Data:
+{
+  "userDataAccessLevel": 0,
+  "name": "1",
+  "description": "1"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T17:59:45.1061964Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/entity-prototypes
+Request Data:
+{
+  "userDataAccessLevel": 0,
+  "name": "q",
+  "description": "q"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T18:01:10.3722084Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/entity-prototypes
+Request Data:
+{
+  "userDataAccessLevel": 0,
+  "name": "q",
+  "description": "q"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T18:13:45.5235197Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/entity-prototypes
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T18:14:52.7055394Z
+Sender: 127.0.0.1
+Method: POST
+URI: /register
+Request Data:
+{
+  "email": "string",
+  "password": "string"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T18:15:15.0723894Z
+Sender: 127.0.0.1
+Method: POST
+URI: /register
+Request Data:
+{
+  "email": "string@saf.com",
+  "password": "string!123"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T18:15:26.0327302Z
+Sender: 127.0.0.1
+Method: POST
+URI: /register
+Request Data:
+{
+  "email": "string@saf.com",
+  "password": "String!123"
+}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-05T18:16:42.0377884Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/profile
+Request Data:
+
+-------------------------
+
