@@ -17,14 +17,14 @@ namespace TaskManagement.Domain.Common.Pagination
         /// Must be greater than 0.
         /// </summary>
         [Range(1, int.MaxValue, ErrorMessage = "Page must be greater than 0.")]
-        public int? Page { get; set; }
+        public uint? Page { get; set; }
 
         /// <summary>
         /// Gets or sets the number of items per page for pagination.
         /// Must be between 1 and 100.
         /// </summary>
-        [Range(1, 100, ErrorMessage = "Page size must be between 1 and 100.")]
-        public int? PageSize { get; set; }
+        [Range(1, int.MaxValue, ErrorMessage = "Page size must be between 1 and 100.")]
+        public uint? PageSize { get; set; }
 
         /// <summary>
         /// Gets or sets the column name by which to sort the results.

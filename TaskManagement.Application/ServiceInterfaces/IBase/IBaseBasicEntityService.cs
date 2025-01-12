@@ -52,7 +52,7 @@ namespace TaskManagement.Application.ServiceInterfaces.IBase
         /// </item>
         /// </list>
         /// </returns>
-        Task<OptionResult<IPaginatedList<TReadDto>>> ListAsync(ListFilter listFilter);
+        Task<OptionResult<IPaginatedList<TReadDto>>> ListAsync(ListFilter listFilter, Expression<Func<T, bool>>? filter = null);
 
         /// <summary>
         /// Retrieves a single entity by its ID.
@@ -85,5 +85,12 @@ namespace TaskManagement.Application.ServiceInterfaces.IBase
 
         #endregion
 
+        #region Common Methods
+
+        Task<OptionResult<bool>> ExistsByUniqueName(string name);
+
+        Task<OptionResult<T?>> GetByUniqueName(string name);
+
+        #endregion
     }
 }

@@ -16,6 +16,8 @@ using TaskManagement.Application.Utilities.Pagination;
 using TaskManagement.Application.Services.AuthServices;
 using TaskManagement.Domain.Errors.Base;
 using System.Linq.Expressions;
+using TaskManagement.Domain.Entities;
+using TaskManagement.Domain.Errors;
 
 
 
@@ -100,9 +102,9 @@ namespace TaskManagement.Application.Services.Base
         /// </item>
         /// </list>
         /// </returns>
-        public virtual async Task<OptionResult<IPaginatedList<TReadDto>>> ListAsync(ListFilter listFilter)
+        public virtual async Task<OptionResult<IPaginatedList<TReadDto>>> ListAsync(ListFilter listFilter, Expression<Func<T, bool>>? filter = null)
         {
-            IPaginatedList<T>? list = await _repository.ListAsync(listFilter);
+            IPaginatedList<T>? list = await _repository.ListAsync(listFilter, filter);
 
             if (list == null)
             {
@@ -306,6 +308,27 @@ namespace TaskManagement.Application.Services.Base
             }
 
             return result > 0;
+        }
+
+        #endregion
+
+        #region Common Methods
+
+        public async Task<OptionResult<bool>> Exists(string id)
+        {
+            if (string.IsNullOrWhiteSpace(id))
+            {
+                return BaseError<T>.MissingId;
+            }
+
+            var existingEntity = await _repository.GetAsync(id);
+
+            if (existingEntity == null)
+            {
+                return BaseError<T>.NotFound;
+            }
+
+            return true;
         }
 
         #endregion

@@ -39,8 +39,8 @@ namespace TaskManagement.Application.Utilities.HATEOAS
         public Link GenerateLink(LinkOperation operation,
                                  string? id = null,
                                  string? searchTerm = null,
-                                 int? page = null,
-                                 int? pageSize = null,
+                                 uint? page = null,
+                                 uint? pageSize = null,
                                  string? sortColumn = null,
                                  string? sortOrder = null)
         {
@@ -128,7 +128,7 @@ namespace TaskManagement.Application.Utilities.HATEOAS
             }
 
             // Add links to surrounding pages (up to 3 before and after the current page)
-            for (int i = Math.Max(1, list.Page - 3); i <= Math.Min(list.TotalPages, list.Page + 3); i++)
+            for (uint i = Math.Max(1, list.Page - 3); i <= Math.Min(list.TotalPages, list.Page + 3); i++)
             {
                 if (i != list.Page) // Exclude current page link
                 {

@@ -52,7 +52,7 @@ namespace TaskManagement.Application.ServiceInterfaces.IBase
         /// </item>
         /// </list>
         /// </returns>
-        Task<OptionResult<IPaginatedList<TReadDto>>> ListAsync(ListFilter listFilter);
+        Task<OptionResult<IPaginatedList<TReadDto>>> ListAsync(ListFilter listFilter, Expression<Func<T, bool>>? filter = null);
 
         /// <summary>
         /// Retrieves a single entity by its ID.
@@ -82,6 +82,12 @@ namespace TaskManagement.Application.ServiceInterfaces.IBase
         /// <param name="id">The ID of the entity to delete.</param>
         /// <returns>True if the entity was deleted successfully, otherwise false.</returns>
         Task<OptionResult<bool>> DeleteAsync(string id);
+
+        #endregion
+
+        #region Common Methods
+
+        Task<OptionResult<bool>> Exists(string id);
 
         #endregion
     }

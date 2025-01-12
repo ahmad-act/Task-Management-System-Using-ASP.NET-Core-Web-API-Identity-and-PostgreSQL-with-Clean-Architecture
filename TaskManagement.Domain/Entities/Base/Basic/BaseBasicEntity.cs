@@ -9,6 +9,7 @@
     {
         public TKey Id { get; set; }
         public string Name { get; set; }
+        public virtual string? Description { get; set; }
         public TKey CreatedBy { get; set; }
         public DateTimeOffset CreatedAt { get; set; }
         public DateTimeOffset ModifiedAt { get; set; }

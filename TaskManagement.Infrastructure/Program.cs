@@ -93,6 +93,28 @@ try
 
     var builder = WebApplication.CreateBuilder(args);
 
+    #region Register CORS services
+
+    builder.Services.AddCors(options =>
+    {
+        options.AddPolicy("AllowSpecificOrigins", policy =>
+        {
+            policy.WithOrigins("https://localhost:3000", "http://localhost:3000")   // Add allowed origins
+                  .AllowAnyHeader()                                                 // Allow any headers (e.g., Authorization)
+                  .AllowAnyMethod();                                                // Allow any HTTP methods (GET, POST, etc.)
+        });
+
+        // Optional: Allow all origins (not recommended in production)
+        options.AddPolicy("AllowAllOrigins", policy =>
+        {
+            policy.AllowAnyOrigin()
+                  .AllowAnyHeader()
+                  .AllowAnyMethod();
+        });
+    });
+
+    #endregion
+
     #region Controllers & Endpoints
 
     //builder.Services.AddControllers();
@@ -358,6 +380,9 @@ try
     var app = builder.Build();
 
     #region Build services
+
+    //app.UseCors("AllowSpecificOrigins"); // Use the named policy
+    app.UseCors("AllowAllOrigins"); // Use the named policy
 
     app.UseStatusCodePages();
 

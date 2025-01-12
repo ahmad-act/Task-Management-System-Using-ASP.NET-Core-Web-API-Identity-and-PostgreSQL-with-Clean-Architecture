@@ -1,4 +1,6 @@
-﻿// Third-party libraries
+﻿using System.Linq.Expressions;
+
+// Third-party libraries
 using AutoMapper;
 using FluentValidation;
 
@@ -6,6 +8,7 @@ using FluentValidation;
 using TaskManagement.Domain.Entities.Base.Basic;
 using TaskManagement.Domain.Repositories.IBase;
 using TaskManagement.Domain.Common;
+using TaskManagement.Domain.Common.Pagination;
 using TaskManagement.Domain.Common.AuditLog;
 using TaskManagement.Domain.Common.HATEOAS;
 
@@ -13,7 +16,7 @@ using TaskManagement.Domain.Common.HATEOAS;
 using TaskManagement.Application.ServiceInterfaces.IBase;
 using TaskManagement.Application.Services.AuthServices;
 using TaskManagement.Domain.Errors.Base;
-using System.Linq.Expressions;
+using TaskManagement.Application.Utilities.ExtensionMethods;
 
 
 namespace TaskManagement.Application.Services.Base
@@ -32,7 +35,7 @@ namespace TaskManagement.Application.Services.Base
     {
         // Injected dependencies
         protected readonly IActivityLog _activityLog;
-        protected readonly IBaseCommonRepository<T> _repository;
+        protected readonly IBaseBasicRepository<T> _repository;
         protected readonly IMapper _mapper;
         protected readonly IEntityLinkGenerator _entityLinkGenerator;
         protected readonly IAppUserService _appUserService;
@@ -48,7 +51,7 @@ namespace TaskManagement.Application.Services.Base
         /// <param name="appUserService">The service to manage application users.</param>
         /// <param name="mapper">The AutoMapper instance for object mapping.</param>
         /// <param name="validator">The validator for update DTOs.</param>
-        protected BaseBasicEntityService(IActivityLog activityLog, IBaseCommonRepository<T> repository, IEntityLinkGenerator entityLinkGenerator, IAppUserService appUserService, IMapper mapper, IValidator<TCreateDto> createValidator, IValidator<TUpdateDto> updateValidator)
+        protected BaseBasicEntityService(IActivityLog activityLog, IBaseBasicRepository<T> repository, IEntityLinkGenerator entityLinkGenerator, IAppUserService appUserService, IMapper mapper, IValidator<TCreateDto> createValidator, IValidator<TUpdateDto> updateValidator)
             : base(activityLog, repository, entityLinkGenerator, appUserService, mapper, createValidator, updateValidator)
         {
             _activityLog = activityLog;
@@ -60,11 +63,113 @@ namespace TaskManagement.Application.Services.Base
             _updateValidator = updateValidator;
         }
 
-        #region CRUD Operations (Override base)
+        #region CRUD Operations (Override base [Common])
+
+        #endregion
+
+        #region Common Methods
+
+        public async Task<OptionResult<bool>> ExistsByUniqueName(string name)
+        {
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                return BaseError<T>.MissingTitle;
+            }
+
+            Expression<Func<T, bool>> predicate = entity => entity.Name.Contains(name);
+            return await _repository.Exists(predicate);
+        }
+
+        public async Task<OptionResult<T?>> GetByUniqueName(string name)
+        {
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                return BaseError<T>.MissingTitle;
+            }
+
+            Expression<Func<T, bool>> predicate = entity => entity.Name.Contains(name);
+            return await _repository.GetByCondition(predicate);
+        }
 
         #endregion
 
         #region CRUD Operations
+
+        /// <summary>
+        /// Retrieves a paginated list of entities with optional filtering, sorting, and pagination.
+        /// </summary>
+        /// <param name="listFilter">
+        /// An instance of <see cref="ListFilter"/> containing optional parameters:
+        /// <list type="bullet">
+        /// <item>
+        /// <description><c>SearchTerm</c>: Optional search term for filtering results.</description>
+        /// </item>
+        /// <item>
+        /// <description><c>Page</c>: Optional page number for pagination. Must be greater than 0.</description>
+        /// </item>
+        /// <item>
+        /// <description><c>PageSize</c>: Optional page size for pagination. Must be between 1 and 100.</description>
+        /// </item>
+        /// <item>
+        /// <description><c>SortColumn</c>: Optional column to sort by. Maximum length is 50 characters.</description>
+        /// </item>
+        /// <item>
+        /// <description><c>SortOrder</c>: Optional sort order. Valid values are "asc" or "desc".</description>
+        /// </item>
+        /// </list>
+        /// </param>
+        /// <typeparam name="TReadDto">The type of the data transfer object used to represent the entities.</typeparam>
+        /// <typeparam name="TKey">The type of the unique identifier for entities.</typeparam>
+        /// <returns>
+        /// An <see cref="OptionResult{T}"/> containing:
+        /// <list type="bullet">
+        /// <item>
+        /// <description>A paginated list of <typeparamref name="TReadDto"/> representing the entities if successful.</description>
+        /// </item>
+        /// <item>
+        /// <description>An error code and message if the operation fails.</description>
+        /// </item>
+        /// </list>
+        /// </returns>
+        public async Task<OptionResult<IPaginatedList<TReadDto>>> ListAsync(ListFilter listFilter, Expression<Func<T, bool>>? filter = null)
+        {
+            Expression<Func<T, bool>>? defaultfilter = null;
+
+            if (!string.IsNullOrWhiteSpace(listFilter.SearchTerm))
+            {
+                // Filter where Name AND Description contain "Search text"
+                filter = x => x.Name.Contains(listFilter.SearchTerm) && x.Description.Contains(listFilter.SearchTerm);
+            }
+
+            return await base.ListAsync(listFilter, filter ?? defaultfilter);
+
+            //IPaginatedList<T>? list = await _repository.ListAsync(listFilter, filter ?? defaultfilter);
+
+            //if (list == null)
+            //{
+            //    return BaseError<T>.NotFound;
+            //};
+
+            //// Map Entity to EntityReadDto
+            //var readDtos = list.Items.Select(entityPrototype =>
+            //{
+            //    var readDto = _mapper.Map<TReadDto>(entityPrototype);
+
+            //    _entityLinkGenerator.GenerateHateoasLinks<TReadDto, TKey>(readDto, readDto.Id.ToString());
+
+            //    return readDto;
+            //}).ToList();
+
+            //_entityLinkGenerator.PaginationLinks<T>(list, listFilter.SearchTerm, listFilter.SortColumn, listFilter.SortOrder);
+
+            //// Return a new paginated list of EntityPrototypeReadDto with pagination data and HATEOAS links
+            //var paginatedResult = new PaginatedList<TReadDto>(readDtos, list.Page, list.PageSize, list.TotalCount)
+            //{
+            //    Links = list.Links
+            //};
+
+            //return paginatedResult;
+        }
 
         /// <summary>
         /// Creates a new entity based on the provided DTO.
@@ -90,9 +195,9 @@ namespace TaskManagement.Application.Services.Base
             var propertyNameInfo = typeof(TCreateDto).GetProperty(nameof(IBaseBasicEntity<TKey>.Name));
             if (propertyNameInfo != null && propertyNameInfo.CanRead)
             {
-                object value = propertyNameInfo.GetValue(createDto);
+                object? value = propertyNameInfo.GetValue(createDto);
 
-                if (value is string)
+                if (value != null && value is string)
                 {
                     name = (string)value;
                 }
@@ -103,7 +208,7 @@ namespace TaskManagement.Application.Services.Base
                 return BaseError<T>.MissingUniqueProperty;
             }
 
-            Expression<Func<T, bool>> predicate = entity => entity.Name.Contains(name);
+            Expression<Func<T, bool>> predicate = entity => entity.Name == name;
 
             bool exists = await _repository.Exists(predicate);
 
@@ -187,9 +292,9 @@ namespace TaskManagement.Application.Services.Base
             var propertyNameInfo = typeof(TUpdateDto).GetProperty(nameof(IBaseBasicEntity<TKey>.Name));
             if (propertyNameInfo != null && propertyNameInfo.CanRead)
             {
-                object value = propertyNameInfo.GetValue(updateDto);
+                object? value = propertyNameInfo.GetValue(updateDto);
 
-                if (value is string)
+                if (value != null && value is string)
                 {
                     name = (string)value;
                 }
@@ -200,18 +305,21 @@ namespace TaskManagement.Application.Services.Base
                 return BaseError<T>.MissingUniqueProperty;
             }
 
-            Expression<Func<T, bool>> predicate = entity => entity.Name.Contains(name);
-
-            bool exists = await _repository.Exists(predicate);
-
-            if (exists)
+            if (existingEntity.Name != name)
             {
-                return BaseError<T>.AlreadyExists;
+                Expression<Func<T, bool>> predicate = entity => entity.Name == name;
+
+                bool exists = await _repository.Exists(predicate);
+
+                if (exists)
+                {
+                    return BaseError<T>.AlreadyExists;
+                }
             }
 
             #endregion
 
-            _mapper.Map(updateDto, existingEntity);
+            updateDto.UpdateEntity(existingEntity);
 
             int result = await _repository.UpdateAsync(existingEntity);
 
@@ -226,6 +334,5 @@ namespace TaskManagement.Application.Services.Base
         }
 
         #endregion
-
     }
 }

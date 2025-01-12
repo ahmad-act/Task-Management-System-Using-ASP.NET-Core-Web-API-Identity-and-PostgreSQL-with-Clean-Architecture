@@ -19,22 +19,22 @@ namespace TaskManagement.Application.Utilities.Pagination
         /// <summary>
         /// Gets the current page number.
         /// </summary>
-        public int Page { get; private set; }
+        public uint Page { get; private set; }
 
         /// <summary>
         /// Gets the number of items per page.
         /// </summary>
-        public int PageSize { get; private set; }
+        public uint PageSize { get; private set; }
 
         /// <summary>
         /// Gets the total number of items across all pages.
         /// </summary>
-        public int TotalCount { get; private set; }
+        public uint TotalCount { get; private set; }
 
         /// <summary>
         /// Gets the total number of pages based on the total item count and page size.
         /// </summary>
-        public int TotalPages { get; private set; }
+        public uint TotalPages { get; private set; }
 
         /// <summary>
         /// Gets or sets the links related to the paginated list, such as for navigation.
@@ -48,13 +48,13 @@ namespace TaskManagement.Application.Utilities.Pagination
         /// <param name="page">The current page number.</param>
         /// <param name="pageSize">The number of items per page.</param>
         /// <param name="totalCount">The total number of items across all pages.</param>
-        public PaginatedList(IEnumerable<T> items, int page, int pageSize, int totalCount)
+        public PaginatedList(IEnumerable<T> items, uint page, uint pageSize, uint totalCount)
         {
             Items = items;
             Page = page;
             PageSize = pageSize;
             TotalCount = totalCount;
-            TotalPages = (int)Math.Ceiling(totalCount / (double)pageSize); // Calculate total pages
+            TotalPages = (uint)Math.Ceiling(totalCount / (double)pageSize); // Calculate total pages
         }
 
         /// <summary>
@@ -75,7 +75,7 @@ namespace TaskManagement.Application.Utilities.Pagination
         /// <param name="pageSize">The number of items per page.</param>
         /// <returns>A task that represents the asynchronous operation, containing a <see cref="PaginatedList{T}"/>.</returns>
         /// <exception cref="ArgumentOutOfRangeException">Thrown when page or pageSize is less than 1.</exception>
-        public static async Task<PaginatedList<T>> CreateAsync(IQueryable<T> query, int page, int pageSize)
+        public static async Task<PaginatedList<T>> CreateAsync(IQueryable<T> query, uint page, uint pageSize)
         {
             var totalCount = await query.CountAsync();
 
@@ -95,15 +95,18 @@ namespace TaskManagement.Application.Utilities.Pagination
                 throw new ArgumentOutOfRangeException(nameof(pageSize), "Page size must be greater than zero.");
             }
 
-            var items = await query.Skip((page - 1) * pageSize).Take(pageSize).ToListAsync();
+            var items = await query
+                .Skip(Convert.ToInt32((page - 1) * pageSize))
+                .Take(Convert.ToInt32(pageSize))
+                .ToListAsync();
 
-            return new PaginatedList<T>(items, page, pageSize, totalCount);
+            return new PaginatedList<T>(items, page, pageSize, (uint)totalCount);
         }
 
         /// <summary>
         /// Creates an empty paginated list with specified page and page size.
         /// </summary>
-        public static PaginatedList<T> Empty(int page, int pageSize)
+        public static PaginatedList<T> Empty(uint page, uint pageSize)
         {
             return new PaginatedList<T>(Enumerable.Empty<T>(), page, pageSize, 0);
         }

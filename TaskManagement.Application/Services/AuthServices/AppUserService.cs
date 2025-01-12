@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
 using System.Linq.Expressions;
 using TaskManagement.Application.DTOs.AuthDTOs.AppUser;
 using TaskManagement.Application.Utilities.Pagination;
@@ -26,7 +27,7 @@ namespace TaskManagement.Application.Services.AuthServices
 
         #region CRUD Operations
 
-        public async Task<OptionResult<IPaginatedList<AppUserReadDto>>> ListAsync(ListFilter listFilter)
+        public async Task<OptionResult<IPaginatedList<AppUserReadDto>>> ListAsync(ListFilter listFilter, Expression<Func<AppUser, bool>>? filter = null)
         {
             var userRolesMap = new List<AppUserReadDto>();
 
@@ -65,8 +66,8 @@ namespace TaskManagement.Application.Services.AuthServices
             listFilter.PageSize ??= int.MaxValue;
 
             var paginatedUsers = userRolesMap
-                .Skip((listFilter.Page.Value - 1) * listFilter.PageSize.Value)
-                .Take(listFilter.PageSize.Value)
+                .Skip(Convert.ToInt32((listFilter.Page.Value - 1) * listFilter.PageSize.Value))
+                .Take(Convert.ToInt32(listFilter.PageSize.Value))
                 .ToList();
 
             // Sorting logic
@@ -90,7 +91,7 @@ namespace TaskManagement.Application.Services.AuthServices
                 paginatedUsers,
                 listFilter.Page.Value,
                 listFilter.PageSize.Value,
-                userRolesMap.Count
+                (uint)userRolesMap.Count
             );
 
             return paginatedResult;

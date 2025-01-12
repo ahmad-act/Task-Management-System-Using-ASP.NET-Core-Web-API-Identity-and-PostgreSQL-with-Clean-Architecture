@@ -91,14 +91,14 @@ namespace TaskManagement.Infrastructure.Repositories.Base
 
             int totalRecords = await query.CountAsync();
 
-            int pageNum = listFilter.Page ?? 1;
-            int recordsPerPage = listFilter.PageSize ?? totalRecords;
+            uint pageNum = listFilter.Page ?? 1;
+            uint recordsPerPage = listFilter.PageSize ?? (uint)totalRecords;
 
             // Return all records if page or pageSize is not specified
             if (pageNum == 0 || recordsPerPage == 0)
             {
-                recordsPerPage = totalRecords;
-                pageNum = recordsPerPage == 0 ? 0 : 1;
+                recordsPerPage = (uint)totalRecords;
+                pageNum = (uint)(recordsPerPage == 0 ? 0 : 1);
             }
 
             return await PaginatedList<T>.CreateAsync(query, pageNum, recordsPerPage);

@@ -3,7 +3,7 @@ using Task = TaskManagement.Domain.Entities.Task;
 
 namespace TaskManagement.Domain.Repositories
 {
-    public interface ITaskRepository: IBaseCommonRepository<Task>
+    public interface ITaskRepository: IBaseBasicRepository<Task>
     {
         #region Domain-Specific interface
 

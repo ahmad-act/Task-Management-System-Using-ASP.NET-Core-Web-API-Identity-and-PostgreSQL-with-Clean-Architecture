@@ -18,5 +18,9 @@ namespace TaskManagement.Domain.Entities.Base.Basic
         /// </summary>
         [Required]
         string Name { get; set; }
+        /// <summary>
+        /// Gets or sets the description for the entity.
+        /// </summary>
+        public string? Description { get; set; }
     }
 }
