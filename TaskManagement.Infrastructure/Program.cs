@@ -62,6 +62,8 @@ using TaskManagement.Application.DTOs.Workspace;
 using TaskManagement.Application.DTOs.Project;
 using TaskManagement.Application.DTOs.Task;
 using TaskManagement.Application.DTOs.Issue;
+using Microsoft.AspNetCore.Mvc;
+using TaskManagement.Domain.Common.ReturnType;
 
 try
 {
@@ -101,7 +103,8 @@ try
         {
             policy.WithOrigins("https://localhost:3000", "http://localhost:3000")   // Add allowed origins
                   .AllowAnyHeader()                                                 // Allow any headers (e.g., Authorization)
-                  .AllowAnyMethod();                                                // Allow any HTTP methods (GET, POST, etc.)
+                  .AllowAnyMethod() // Allow any HTTP methods (GET, POST, etc.)
+                  .AllowCredentials(); 
         });
 
         // Optional: Allow all origins (not recommended in production)
@@ -316,6 +319,28 @@ try
     builder.Services.AddProblemDetails();
     builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 
+    builder.Services.Configure<ApiBehaviorOptions>(options =>
+    {
+        options.InvalidModelStateResponseFactory = context =>
+        {
+            var errors = context.ModelState
+                .Where(e => e.Value?.Errors.Count > 0)
+                .Select(e => new
+                {
+                    Field = e.Key,
+                    Messages = e.Value.Errors.Select(x => x.ErrorMessage).ToArray()
+                })
+                .ToArray();
+
+            var response = ApiResponse.Failure(
+                errors: errors.SelectMany(e => e.Messages.Select(m => new Error(400, e.Field, m))).ToArray(),
+                message: "Validation Failed"
+            );
+
+            return new BadRequestObjectResult(response);
+        };
+    });
+
     #endregion
 
     #region Register services for Dependency Injection
@@ -381,8 +406,8 @@ try
 
     #region Build services
 
-    //app.UseCors("AllowSpecificOrigins"); // Use the named policy
-    app.UseCors("AllowAllOrigins"); // Use the named policy
+    app.UseCors("AllowSpecificOrigins"); // Use the named policy
+    //app.UseCors("AllowAllOrigins"); // Use the named policy
 
     app.UseStatusCodePages();
 
@@ -443,6 +468,7 @@ try
     app.UseExceptionHandler();
 
     app.MapIdentityApi<AppUser>();
+        //.RequireCors("AllowSpecificOrigins");
     app.MapControllers();
 
     app.Run();

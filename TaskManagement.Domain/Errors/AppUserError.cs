@@ -1,4 +1,4 @@
-﻿using TaskManagement.Domain.Common;
+﻿using TaskManagement.Domain.Common.ReturnType;
 using TaskManagement.Domain.Entities.Auth;
 using TaskManagement.Domain.Errors.Base;
 

@@ -5,8 +5,8 @@ using System.Linq;
 using System.Linq.Expressions;
 using TaskManagement.Application.DTOs.AuthDTOs.AppUser;
 using TaskManagement.Application.Utilities.Pagination;
-using TaskManagement.Domain.Common;
 using TaskManagement.Domain.Common.Pagination;
+using TaskManagement.Domain.Common.ReturnType;
 using TaskManagement.Domain.Entities.Auth;
 using TaskManagement.Domain.Errors;
 
@@ -104,7 +104,7 @@ namespace TaskManagement.Application.Services.AuthServices
 
             if (user == null)
             {
-                return AppUserError.NotFound;
+                return new[] { AppUserError.NotFound };
             }
 
             var rolesInUser = await _userManager.GetRolesAsync(user);
@@ -127,23 +127,23 @@ namespace TaskManagement.Application.Services.AuthServices
         {
             if (create == null)
             {
-                return AppUserError.Null;
+                return new[] { AppUserError.Null };
             }
 
             if (string.IsNullOrWhiteSpace(create.UserName))
             {
-                return AppUserError.MissingUserName;
+                return new[] { AppUserError.MissingUserName };
             }
 
             var existingUser = await _userManager.FindByNameAsync(create.UserName);
             if (existingUser != null)
             {
-                return AppUserError.AlreadyExists;
+                return new[] { AppUserError.AlreadyExists };
             }
 
             var user = new AppUser
             {
-                UserName = create.UserName,
+                UserName = create.UserName ?? create.Email,
                 Email = create.Email,
                 FirstName = create.FirstName,
                 LastName = create.LastName
@@ -155,7 +155,7 @@ namespace TaskManagement.Application.Services.AuthServices
             {
                 var errors = string.Join("; ", result.Errors.Select(e => e.Description));
 
-                return new Error(500, AppUserError.NoRowsAffected.Status, errors);
+                return new[] { new Error(500, AppUserError.NoRowsAffected.Status, errors) };
             }
 
             return user.Id;
@@ -166,7 +166,7 @@ namespace TaskManagement.Application.Services.AuthServices
             var existingEntity = await _userManager.FindByIdAsync(id);
             if (existingEntity == null)
             {
-                return AppUserError.NotFound;
+                return new[] { AppUserError.NotFound };
                 //return "404"; // Not Found
             }
 
@@ -175,7 +175,7 @@ namespace TaskManagement.Application.Services.AuthServices
             var result = await _userManager.UpdateAsync(existingEntity);
             if (!result.Succeeded)
             {
-                return AppUserError.NoRowsAffected;
+                return new[] { AppUserError.NoRowsAffected };
             }
 
             _mapper.Map(existingEntity, update);
@@ -189,14 +189,14 @@ namespace TaskManagement.Application.Services.AuthServices
 
             if (existingEntity == null)
             {
-                return AppUserError.NotFound;
+                return new[] { AppUserError.NotFound };
             }
 
             var result = await _userManager.DeleteAsync(existingEntity);
 
             if (!result.Succeeded)
             {
-                return AppUserError.NoRowsAffected;
+                return new[] { AppUserError.NoRowsAffected };
             }
 
             return result.Succeeded;
@@ -212,7 +212,7 @@ namespace TaskManagement.Application.Services.AuthServices
 
             if (existingEntity == null)
             {
-                return AppUserError.NotFound;
+                return new[] { AppUserError.NotFound };
             }
 
             return true;
@@ -222,7 +222,7 @@ namespace TaskManagement.Application.Services.AuthServices
         {
             if (string.IsNullOrWhiteSpace(name))
             {
-                return AppUserError.MissingUserName;
+                return new[] { AppUserError.MissingUserName };
             }
 
             var existingUser = await _userManager.FindByNameAsync(name);
@@ -234,14 +234,14 @@ namespace TaskManagement.Application.Services.AuthServices
         {
             if (string.IsNullOrWhiteSpace(name))
             {
-                return AppUserError.MissingTitle;
+                return new[] { AppUserError.MissingTitle };
             }
 
             var user = await _userManager.FindByNameAsync(name);
 
             if (user == null)
             {
-                return AppUserError.NotFound;
+                return new[] { AppUserError.NotFound };
             }
 
             var rolesInUser = await _userManager.GetRolesAsync(user);

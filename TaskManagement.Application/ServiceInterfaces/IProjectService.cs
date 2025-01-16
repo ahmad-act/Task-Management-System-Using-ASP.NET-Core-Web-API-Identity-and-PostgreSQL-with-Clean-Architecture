@@ -1,6 +1,6 @@
 ﻿using TaskManagement.Application.DTOs.Project;
 using TaskManagement.Application.ServiceInterfaces.IBase;
-using TaskManagement.Domain.Common;
+using TaskManagement.Domain.Common.ReturnType;
 using TaskManagement.Domain.Entities;
 
 namespace TaskManagement.Application.ServiceInterfaces

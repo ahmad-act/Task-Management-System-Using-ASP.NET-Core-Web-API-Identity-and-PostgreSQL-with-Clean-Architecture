@@ -1,5 +1,4 @@
-﻿
-namespace TaskManagement.Domain.Common
+﻿namespace TaskManagement.Domain.Common.ReturnType
 {
     /// <summary>
     /// Represents the result of an operation that can either succeed or fail.
@@ -10,7 +9,7 @@ namespace TaskManagement.Domain.Common
     {
 
         private readonly TValue? _value;
-        private readonly Error _error;
+        private readonly Error[] _error;
 
         private readonly bool _isSuccess;
 
@@ -18,10 +17,10 @@ namespace TaskManagement.Domain.Common
         {
             _isSuccess = true;
             _value = value;
-            _error = Error.None;
+            _error = new Error[] { };
         }
 
-        private OptionResult(Error error)
+        private OptionResult(Error[] error)
         {
             _isSuccess = false;
             _value = default;
@@ -29,12 +28,12 @@ namespace TaskManagement.Domain.Common
         }
 
         public static OptionResult<TValue> Success(TValue value) => new(value);
-        public static OptionResult<TValue> Failure(Error error) => new(error);
+        public static OptionResult<TValue> Failure(Error[] error) => new(error);
 
         public static implicit operator OptionResult<TValue>(TValue value) => new(value);
-        public static implicit operator OptionResult<TValue>(Error error) => new(error);
+        public static implicit operator OptionResult<TValue>(Error[] error) => new(error);
 
-        public TResult Match<TResult>(Func<TValue, TResult> success, Func<Error, TResult> failure)
+        public TResult Match<TResult>(Func<TValue, TResult> success, Func<Error[], TResult> failure)
         {
             return _isSuccess ? success(_value!) : failure(_error);
         }

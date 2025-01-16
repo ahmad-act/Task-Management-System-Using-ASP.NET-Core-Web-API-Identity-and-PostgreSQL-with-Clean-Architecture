@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Security;
 using System.Security.Authentication;
 using TaskManagement.Domain.Common.AuditLog;
+using TaskManagement.Domain.Common.ReturnType;
 
 namespace TaskManagement.Infrastructure.ExceptionHandler
 {
@@ -22,37 +23,26 @@ namespace TaskManagement.Infrastructure.ExceptionHandler
         {
             var traceId = Activity.Current?.Id ?? httpContext.TraceIdentifier;
 
+            // Log the error with activity log
             _activityLog.LogError($"MachineName: {Environment.MachineName}. TraceId: {traceId}", exception);
 
+            // Map the exception to a status code and error message
             var (statusCode, title) = MapException(exception);
 
-            await Results.Problem(
-                title: title,
-                statusCode: statusCode,
-                extensions: new Dictionary<string, object>
-                {
-                    { "traceId", traceId }
-                }).ExecuteAsync(httpContext);
+            // Create a failure response using ApiResponse
+            var response = ApiResponse.Failure(
+                errors: new[] { new Error(statusCode, title, exception.Message) },
+                message: title
+            );
+
+            // Set the HTTP status code and write the response
+            httpContext.Response.StatusCode = statusCode;
+            httpContext.Response.ContentType = "application/json";
+
+            await httpContext.Response.WriteAsJsonAsync(response, cancellationToken);
 
             return true;
-
-            //var details = new ProblemDetails()
-            //{
-            //    Detail = exception.Message,
-            //    Instance = exception.StackTrace,
-            //    Status = (int)HttpStatusCode.InternalServerError,
-            //    Title = exception.Message,
-            //    Type = "Server Error"
-            //};
-
-            //var response = JsonSerializer.Serialize(details);
-
-            //httpContext.Response.ContentType = "application/json";
-            //await httpContext.Response.WriteAsJsonAsync(response, cancellationToken);
-
-            //return true;
         }
-
 
         private static (int StatusCode, string Title) MapException(Exception ex)
         {

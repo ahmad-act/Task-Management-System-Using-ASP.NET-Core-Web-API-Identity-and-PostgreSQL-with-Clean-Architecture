@@ -1,6 +1,6 @@
 ﻿using System.Linq.Expressions;
-using TaskManagement.Domain.Common;
 using TaskManagement.Domain.Common.Pagination;
+using TaskManagement.Domain.Common.ReturnType;
 
 namespace TaskManagement.Application.ServiceInterfaces.IBase
 {

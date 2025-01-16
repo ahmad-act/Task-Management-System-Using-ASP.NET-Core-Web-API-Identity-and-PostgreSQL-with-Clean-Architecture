@@ -1,6 +1,6 @@
 ﻿using TaskManagement.Application.ServiceInterfaces.IBase;
-using TaskManagement.Domain.Common;
 using TaskManagement.Application.DTOs.Task;
+using TaskManagement.Domain.Common.ReturnType;
 
 namespace TaskManagement.Application.ServiceInterfaces
 {

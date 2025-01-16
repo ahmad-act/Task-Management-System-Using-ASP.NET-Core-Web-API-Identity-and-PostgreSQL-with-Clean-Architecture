@@ -7,7 +7,6 @@ using Swashbuckle.AspNetCore.Annotations;
 using Asp.Versioning;
 
 // Domain/Core layer
-using TaskManagement.Domain.Common;
 using TaskManagement.Domain.Common.JWT;
 using TaskManagement.Domain.Common.HATEOAS;
 using TaskManagement.Domain.Common.Pagination;
@@ -21,6 +20,7 @@ using TaskManagement.Presenter.Filters;
 using TaskManagement.Application.Utilities.Pagination;
 using TaskManagement.Domain.Entities.Base.Common;
 using TaskManagement.Domain.Entities.Base.Basic;
+using TaskManagement.Domain.Common.ReturnType;
 
 namespace TaskManagement.Presenter.Controllers.Base.v1
 {
@@ -71,15 +71,15 @@ namespace TaskManagement.Presenter.Controllers.Base.v1
             var result = await _service.ListAsync(listFilter);
 
             return result.Match<IActionResult>(
-                value => Ok(value),          // Success: return HTTP 200
+                value => Ok(ApiResponse.Success(value, "Data retrieved successfully")),  // Success: return HTTP 200
                 error =>
                 {
-                    return error.StatusCode switch
+                    return error[0].StatusCode switch
                     {
-                        401 => Unauthorized(error),
-                        404 => NotFound(error),
-                        500 => StatusCode(500, error),
-                        _ => StatusCode(error.StatusCode, error)
+                        401 => Unauthorized(ApiResponse.Failure(error)),
+                        404 => NotFound(ApiResponse.Failure(error)),
+                        500 => StatusCode(500, ApiResponse.Failure(error)),
+                        _ => StatusCode(error[0].StatusCode, ApiResponse.Failure(error))
                     };
                 }
             );
@@ -98,16 +98,16 @@ namespace TaskManagement.Presenter.Controllers.Base.v1
             OptionResult<TReadDto> result = await _service.GetAsync(id);
 
             return result.Match<IActionResult>(
-                value => Ok(value),          // Success: return HTTP 200
+                value => Ok(ApiResponse.Success(value, "Data retrieved successfully")),          // Success: return HTTP 200
                 error =>
                 {
-                    return error.StatusCode switch
+                    return error[0].StatusCode switch
                     {
-                        400 => BadRequest(error),
-                        404 => NotFound(error),
-                        401 => Unauthorized(error),
-                        500 => StatusCode(500, error),
-                        _ => StatusCode(error.StatusCode, error)
+                        400 => BadRequest(ApiResponse.Failure(error)),
+                        404 => NotFound(ApiResponse.Failure(error)),
+                        401 => Unauthorized(ApiResponse.Failure(error)),
+                        500 => StatusCode(500, ApiResponse.Failure(error)),
+                        _ => StatusCode(error[0].StatusCode, ApiResponse.Failure(error))
                     };
                 }
             );
@@ -130,15 +130,15 @@ namespace TaskManagement.Presenter.Controllers.Base.v1
             OptionResult<TKey> result = await _service.CreateAsync(entityCreate);
 
             return result.Match<IActionResult>(
-                value => Created(string.Empty, new { id = Convert.ToString(value), message = $"{typeof(T).Name} added successfully" }),          // Success: return HTTP 200
+                value => Created(string.Empty, ApiResponse.Success(value, "Data added successfully")),          // Success: return HTTP 200
                 error =>
                 {
-                    return error.StatusCode switch
+                    return error[0].StatusCode switch
                     {
-                        400 => BadRequest(error),
-                        401 => Unauthorized(error),
-                        500 => StatusCode(500, error),
-                        _ => StatusCode(error.StatusCode, error)
+                        400 => BadRequest(ApiResponse.Failure(error)),
+                        401 => Unauthorized(ApiResponse.Failure(error)),
+                        500 => StatusCode(500, ApiResponse.Failure(error)),
+                        _ => StatusCode(error[0].StatusCode, ApiResponse.Failure(error))
                     };
                 }
             );
@@ -167,16 +167,16 @@ namespace TaskManagement.Presenter.Controllers.Base.v1
             OptionResult<TUpdateDto> result = await _service.UpdateAsync(id, entityUpdate);
 
             return result.Match<IActionResult>(
-                value => Ok(value),          // Success: return HTTP 200
+                value => Ok(ApiResponse.Success(value, "Data updated successfully")),          // Success: return HTTP 200
                 error =>
                 {
-                    return error.StatusCode switch
+                    return error[0].StatusCode switch
                     {
-                        400 => BadRequest(error),
-                        401 => Unauthorized(error),
-                        404 => NotFound(error),
-                        500 => StatusCode(500, error),
-                        _ => StatusCode(error.StatusCode, error)
+                        400 => BadRequest(ApiResponse.Failure(error)),
+                        401 => Unauthorized(ApiResponse.Failure(error)),
+                        404 => NotFound(ApiResponse.Failure(error)),
+                        500 => StatusCode(500, ApiResponse.Failure(error)),
+                        _ => StatusCode(error[0].StatusCode, ApiResponse.Failure(error))
                     };
                 }
             );
@@ -200,16 +200,16 @@ namespace TaskManagement.Presenter.Controllers.Base.v1
             OptionResult<bool> result = await _service.DeleteAsync(id);
 
             return result.Match<IActionResult>(
-                value => Ok($"{typeof(T).Name} deleted successfully"),          // Success: return HTTP 200
+                value => Ok(ApiResponse.Success(value, "Data deleted successfully")),          // Success: return HTTP 200
                 error =>
                 {
-                    return error.StatusCode switch
+                    return error[0].StatusCode switch
                     {
-                        400 => BadRequest(error),
-                        401 => Unauthorized(error),
-                        404 => NotFound(error),
-                        500 => StatusCode(500, error),
-                        _ => StatusCode(error.StatusCode, error)
+                        400 => BadRequest(ApiResponse.Failure(error)),
+                        401 => Unauthorized(ApiResponse.Failure(error)),
+                        404 => NotFound(ApiResponse.Failure(error)),
+                        500 => StatusCode(500, ApiResponse.Failure(error)),
+                        _ => StatusCode(error[0].StatusCode, ApiResponse.Failure(error))
                     };
                 }
             );

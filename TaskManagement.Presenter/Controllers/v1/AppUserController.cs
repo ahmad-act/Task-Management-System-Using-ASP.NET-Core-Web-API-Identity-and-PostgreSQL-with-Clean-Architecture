@@ -7,8 +7,8 @@ using Swashbuckle.AspNetCore.Annotations;
 using System.Security.Claims;
 using TaskManagement.Application.DTOs.AuthDTOs.AppUser;
 using TaskManagement.Application.Services.AuthServices;
-using TaskManagement.Domain.Common;
 using TaskManagement.Domain.Common.JWT;
+using TaskManagement.Domain.Common.ReturnType;
 using TaskManagement.Domain.Entities.Auth;
 using TaskManagement.Presenter.Controllers.Base.v1;
 
@@ -50,12 +50,12 @@ namespace TaskManagement.Presenter.Controllers.v1
                 value => Created(string.Empty, new { id = Convert.ToString(value), message = $"{nameof(AppUser)} registered successfully" }),          // Success: return HTTP 200
                 error =>
                 {
-                    return error.StatusCode switch
+                    return error[0].StatusCode switch
                     {
-                        400 => BadRequest(error),
-                        401 => Unauthorized(error),
-                        500 => StatusCode(500, error),
-                        _ => StatusCode(error.StatusCode, error)
+                        400 => BadRequest(ApiResponse.Failure(error)),
+                        401 => Unauthorized(ApiResponse.Failure(error)),
+                        500 => StatusCode(500, ApiResponse.Failure(error)),
+                        _ => StatusCode(error[0].StatusCode, ApiResponse.Failure(error))
                     };
                 }
             );
@@ -78,30 +78,32 @@ namespace TaskManagement.Presenter.Controllers.v1
             var login = await _signInManager.PasswordSignInAsync(appUserLoginDto.UserName, appUserLoginDto.Password, appUserLoginDto.RememberMe, false);
 
             if (!login.Succeeded)
+            {
                 return Unauthorized("Invalid login attempt.");
+            }
 
             var result = await _appUserService.GetByUniqueName(appUserLoginDto.UserName);
 
             return result.Match<IActionResult>(
                 value =>  // Success: return HTTP 200
                 {
-                    //var rolesList = value.AppRoles; 
-                    //string roleNames = string.Join(",", rolesList.Select(role => role.Name));
-                    //string jwt = jwtSettings.GenerateJwt(value.Id.ToString(), roleNames);
+                    var rolesList = value.AppRoles;
+                    string roleNames = string.Join(",", rolesList.Select(role => role.Name));
+                    string jwt = jwtSettings.GenerateJwt(value.Id.ToString(), roleNames);
 
-                    //Response.Cookies.Append(_jwtSettings.JwtTokenName, jwt, _jwtSettings.GetCookieOption());
+                    Response.Cookies.Append(_jwtSettings.JwtTokenName, jwt, _jwtSettings.GetCookieOption());
 
-                    //return Ok(jwt);
+                    return Ok(jwt);
 
-                    return Ok("Successfully logged in.");
+                    //return Ok("Successfully logged in.");
                 },
                 error =>
                 {
-                    return error.StatusCode switch
+                    return error[0].StatusCode switch
                     {
-                        400 => BadRequest(error),
-                        500 => StatusCode(500, error),
-                        _ => StatusCode(error.StatusCode, error)
+                        400 => BadRequest(ApiResponse.Failure(error)),
+                        500 => StatusCode(500, ApiResponse.Failure(error)),
+                        _ => StatusCode(error[0].StatusCode, ApiResponse.Failure(error))
                     };
                 }
             );
@@ -140,11 +142,11 @@ namespace TaskManagement.Presenter.Controllers.v1
                 value => Ok(value),// Success: return HTTP 200
                 error =>
                 {
-                    return error.StatusCode switch
+                    return error[0].StatusCode switch
                     {
-                        400 => BadRequest(error),
-                        500 => StatusCode(500, error),
-                        _ => StatusCode(error.StatusCode, error)
+                        400 => BadRequest(ApiResponse.Failure(error)),
+                        500 => StatusCode(500, ApiResponse.Failure(error)),
+                        _ => StatusCode(error[0].StatusCode, ApiResponse.Failure(error))
                     };
                 }
             );

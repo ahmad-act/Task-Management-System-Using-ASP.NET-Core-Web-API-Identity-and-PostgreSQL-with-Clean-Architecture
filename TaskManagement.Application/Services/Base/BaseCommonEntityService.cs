@@ -5,7 +5,6 @@ using FluentValidation;
 // Domain/Core layer
 using TaskManagement.Domain.Entities.Base.Common;
 using TaskManagement.Domain.Repositories.IBase;
-using TaskManagement.Domain.Common;
 using TaskManagement.Domain.Common.Pagination;
 using TaskManagement.Domain.Common.AuditLog;
 using TaskManagement.Domain.Common.HATEOAS;
@@ -18,6 +17,7 @@ using TaskManagement.Domain.Errors.Base;
 using System.Linq.Expressions;
 using TaskManagement.Domain.Entities;
 using TaskManagement.Domain.Errors;
+using TaskManagement.Domain.Common.ReturnType;
 
 
 
@@ -108,7 +108,7 @@ namespace TaskManagement.Application.Services.Base
 
             if (list == null)
             {
-                return BaseError<T>.NotFound;
+                return new[] { BaseError<T>.NotFound };
             };
 
             // Map Entity to EntityReadDto
@@ -143,14 +143,14 @@ namespace TaskManagement.Application.Services.Base
 
             if (existingEntity == null)
             {
-                return BaseError<T>.NotFound;
+                return new[] { BaseError<T>.NotFound };
             }
 
             TReadDto entityReadDto = _mapper.Map<TReadDto>(existingEntity);
 
             if (entityReadDto == null)
             {
-                return BaseError<T>.ConversionFailed;
+                return new[] { BaseError<T>.ConversionFailed };
             }
             else
             {
@@ -173,7 +173,7 @@ namespace TaskManagement.Application.Services.Base
 
             if (!validationResult.IsValid)
             {
-                return new Error(400, BaseError<T>.InvalidData.ToString(), validationResult.Errors.ToString()!);
+                return new[] { new Error(400, BaseError<T>.InvalidData.ToString(), validationResult.Errors.ToString()!) };
             }
 
             #endregion
@@ -186,7 +186,7 @@ namespace TaskManagement.Application.Services.Base
 
                 if (exists)
                 {
-                    return BaseError<T>.AlreadyExists;
+                    return new[] { BaseError<T>.AlreadyExists };
                 }
             }
 
@@ -212,7 +212,7 @@ namespace TaskManagement.Application.Services.Base
 
             if (result == 0)
             {
-                return BaseError<T>.NoRowsAffected;
+                return new[] { BaseError<T>.NoRowsAffected };
             }
 
             #region Return the generated ID if successful, otherwise return Guid.Empty for Guid type or default for other types
@@ -221,7 +221,7 @@ namespace TaskManagement.Application.Services.Base
 
             if (entityId == null)
             {
-                return BaseError<T>.MissingId;
+                return new[] { BaseError<T>.MissingId };
             }
 
             #endregion
@@ -243,7 +243,7 @@ namespace TaskManagement.Application.Services.Base
 
             if (!validationResult.IsValid)
             {
-                return new Error(400, BaseError<T>.InvalidData.ToString(), validationResult.Errors.ToString()!);
+                return new[] { new Error(400, BaseError<T>.InvalidData.ToString(), validationResult.Errors.ToString()!) };
             }
 
             #endregion
@@ -254,7 +254,7 @@ namespace TaskManagement.Application.Services.Base
 
             if (existingEntity == null)
             {
-                return BaseError<T>.NotFound;
+                return new[] { BaseError<T>.NotFound };
             }
 
             #endregion
@@ -267,7 +267,7 @@ namespace TaskManagement.Application.Services.Base
 
                 if (exists)
                 {
-                    return BaseError<T>.AlreadyExists;
+                    return new[] { BaseError<T>.AlreadyExists };
                 }
             }
 
@@ -279,7 +279,7 @@ namespace TaskManagement.Application.Services.Base
 
             if (result == 0)
             {
-                return BaseError<T>.NoRowsAffected;
+                return new[] { BaseError<T>.NoRowsAffected };
             }
 
             _mapper.Map(existingEntity, updateDto);
@@ -297,14 +297,14 @@ namespace TaskManagement.Application.Services.Base
             var existingEntity = await _repository.GetAsync(id);
             if (existingEntity == null)
             {
-                return BaseError<T>.NotFound;
+                return new[] { BaseError<T>.NotFound };
             }
 
             int result = await _repository.DeleteAsync(existingEntity);
 
             if (result == 0)
             {
-                return BaseError<T>.NoRowsAffected;
+                return new[] { BaseError<T>.NoRowsAffected };
             }
 
             return result > 0;
@@ -318,14 +318,14 @@ namespace TaskManagement.Application.Services.Base
         {
             if (string.IsNullOrWhiteSpace(id))
             {
-                return BaseError<T>.MissingId;
+                return new[] { BaseError<T>.MissingId };
             }
 
             var existingEntity = await _repository.GetAsync(id);
 
             if (existingEntity == null)
             {
-                return BaseError<T>.NotFound;
+                return new[] { BaseError<T>.NotFound };
             }
 
             return true;

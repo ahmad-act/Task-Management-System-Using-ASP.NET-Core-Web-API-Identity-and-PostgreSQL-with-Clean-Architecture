@@ -7,7 +7,6 @@ using FluentValidation;
 // Domain/Core layer
 using TaskManagement.Domain.Entities.Base.Basic;
 using TaskManagement.Domain.Repositories.IBase;
-using TaskManagement.Domain.Common;
 using TaskManagement.Domain.Common.Pagination;
 using TaskManagement.Domain.Common.AuditLog;
 using TaskManagement.Domain.Common.HATEOAS;
@@ -17,6 +16,7 @@ using TaskManagement.Application.ServiceInterfaces.IBase;
 using TaskManagement.Application.Services.AuthServices;
 using TaskManagement.Domain.Errors.Base;
 using TaskManagement.Application.Utilities.ExtensionMethods;
+using TaskManagement.Domain.Common.ReturnType;
 
 
 namespace TaskManagement.Application.Services.Base
@@ -73,7 +73,7 @@ namespace TaskManagement.Application.Services.Base
         {
             if (string.IsNullOrWhiteSpace(name))
             {
-                return BaseError<T>.MissingTitle;
+                return new[] { BaseError<T>.MissingTitle };
             }
 
             Expression<Func<T, bool>> predicate = entity => entity.Name.Contains(name);
@@ -84,7 +84,7 @@ namespace TaskManagement.Application.Services.Base
         {
             if (string.IsNullOrWhiteSpace(name))
             {
-                return BaseError<T>.MissingTitle;
+                return new[] { BaseError<T>.MissingTitle };
             }
 
             Expression<Func<T, bool>> predicate = entity => entity.Name.Contains(name);
@@ -184,7 +184,7 @@ namespace TaskManagement.Application.Services.Base
 
             if (!validationResult.IsValid)
             {
-                return new Error(400, BaseError<T>.InvalidData.ToString(), validationResult.Errors.ToString()!);
+                return new[] { new Error(400, BaseError<T>.InvalidData.ToString(), validationResult.Errors.ToString()!) };
             }
 
             #endregion
@@ -205,7 +205,7 @@ namespace TaskManagement.Application.Services.Base
 
             if (string.IsNullOrWhiteSpace(name))
             {
-                return BaseError<T>.MissingUniqueProperty;
+                return new[] { BaseError<T>.MissingUniqueProperty };
             }
 
             Expression<Func<T, bool>> predicate = entity => entity.Name == name;
@@ -214,7 +214,7 @@ namespace TaskManagement.Application.Services.Base
 
             if (exists)
             {
-                return BaseError<T>.AlreadyExists;
+                return new[] { BaseError<T>.AlreadyExists };
             }
 
             #endregion
@@ -239,7 +239,7 @@ namespace TaskManagement.Application.Services.Base
 
             if (result == 0)
             {
-                return BaseError<T>.NoRowsAffected;
+                return new[] { BaseError<T>.NoRowsAffected };
             }
 
             #region Return the generated ID if successful, otherwise return Guid.Empty for Guid type or default for other types
@@ -248,7 +248,7 @@ namespace TaskManagement.Application.Services.Base
 
             if (entityId == null)
             {
-                return BaseError<T>.MissingId;
+                return new[] { BaseError<T>.MissingId };
             }
 
             #endregion
@@ -270,7 +270,7 @@ namespace TaskManagement.Application.Services.Base
 
             if (!validationResult.IsValid)
             {
-                return new Error(400, BaseError<T>.InvalidData.ToString(), validationResult.Errors.ToString()!);
+                return new[] { new Error(400, BaseError<T>.InvalidData.ToString(), validationResult.Errors.ToString()!) };
             }
 
             #endregion
@@ -281,7 +281,7 @@ namespace TaskManagement.Application.Services.Base
 
             if (existingEntity == null)
             {
-                return BaseError<T>.NotFound;
+                return new[] { BaseError<T>.NotFound };
             }
 
             #endregion
@@ -302,7 +302,7 @@ namespace TaskManagement.Application.Services.Base
 
             if (string.IsNullOrWhiteSpace(name))
             {
-                return BaseError<T>.MissingUniqueProperty;
+                return new[] { BaseError<T>.MissingUniqueProperty };
             }
 
             if (existingEntity.Name != name)
@@ -313,7 +313,7 @@ namespace TaskManagement.Application.Services.Base
 
                 if (exists)
                 {
-                    return BaseError<T>.AlreadyExists;
+                    return new[] { BaseError<T>.AlreadyExists };
                 }
             }
 
@@ -325,7 +325,7 @@ namespace TaskManagement.Application.Services.Base
 
             if (result == 0)
             {
-                return BaseError<T>.NoRowsAffected;
+                return new[] { BaseError<T>.NoRowsAffected };
             }
 
             _mapper.Map(existingEntity, updateDto);

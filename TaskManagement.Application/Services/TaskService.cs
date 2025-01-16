@@ -8,7 +8,6 @@ using FluentValidation;
 // Domain/Core layer
 using TaskManagement.Domain.Repositories;
 using TaskManagement.Domain.Errors;
-using TaskManagement.Domain.Common;
 using TaskManagement.Domain.Common.AuditLog;
 using TaskManagement.Domain.Common.HATEOAS;
 using TaskManagement.Domain.Common.JWT;
@@ -18,6 +17,7 @@ using TaskManagement.Application.Services.Base;
 using TaskManagement.Application.ServiceInterfaces;
 using TaskManagement.Application.Services.AuthServices;
 using TaskManagement.Application.DTOs.Task;
+using TaskManagement.Domain.Common.ReturnType;
 
 namespace TaskManagement.Application.Services
 {
@@ -37,14 +37,14 @@ namespace TaskManagement.Application.Services
         {
             if (string.IsNullOrWhiteSpace(id))
             {
-                return TaskError.MissingId;
+                return new[] { TaskError.MissingId };
             }
 
             var existingEntity = await _repository.GetAsync(id);
 
             if (existingEntity == null)
             {
-                return TaskError.NotFound;
+                return new[] { TaskError.NotFound };
             }
 
             return true;
@@ -54,7 +54,7 @@ namespace TaskManagement.Application.Services
         {
             if (string.IsNullOrWhiteSpace(name))
             {
-                return TaskError.MissingTitle;
+                return new[] { TaskError.MissingTitle };
             }
 
             Expression<Func<Domain.Entities.Task, bool>> predicate = entity => entity.Name.Contains(name);
@@ -65,7 +65,7 @@ namespace TaskManagement.Application.Services
         {
             if (string.IsNullOrWhiteSpace(name))
             {
-                return TaskError.MissingTitle;
+                return new[] { TaskError.MissingTitle };
             }
 
             Expression<Func<Domain.Entities.Task, bool>> predicate = entity => entity.Name.Contains(name);

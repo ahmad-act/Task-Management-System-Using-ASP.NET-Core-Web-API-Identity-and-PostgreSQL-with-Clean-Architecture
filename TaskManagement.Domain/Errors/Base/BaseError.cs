@@ -1,4 +1,4 @@
-﻿using TaskManagement.Domain.Common;
+﻿using TaskManagement.Domain.Common.ReturnType;
 
 namespace TaskManagement.Domain.Errors.Base
 {
