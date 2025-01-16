@@ -138,7 +138,7 @@ namespace TaskManagement.Application.Services.Base
             if (!string.IsNullOrWhiteSpace(listFilter.SearchTerm))
             {
                 // Filter where Name AND Description contain "Search text"
-                filter = x => x.Name.Contains(listFilter.SearchTerm) && x.Description.Contains(listFilter.SearchTerm);
+                filter = x => x.Name.Contains(listFilter.SearchTerm) || (x.Description != null && x.Description.Contains(listFilter.SearchTerm));
             }
 
             return await base.ListAsync(listFilter, filter ?? defaultfilter);
