@@ -71,7 +71,7 @@ namespace TaskManagement.Presenter.Controllers.Base.v1
             var result = await _service.ListAsync(listFilter);
 
             return result.Match<IActionResult>(
-                value => Ok(value),          // Success: return HTTP 200
+                value => Ok(ApiResponse.Success(value, "Data retrieved successfully")),          // Success: return HTTP 200
                 error =>
                 {
                     return error[0].StatusCode switch
@@ -98,7 +98,7 @@ namespace TaskManagement.Presenter.Controllers.Base.v1
             OptionResult<TReadDto> result = await _service.GetAsync(id);
 
             return result.Match<IActionResult>(
-                value => Ok(value),          // Success: return HTTP 200
+                value => Ok(ApiResponse.Success(value, "Data retrieved successfully")),          // Success: return HTTP 200
                 error =>
                 {
                     return error[0].StatusCode switch
@@ -130,7 +130,7 @@ namespace TaskManagement.Presenter.Controllers.Base.v1
             OptionResult<TKey> result = await _service.CreateAsync(entityCreate);
 
             return result.Match<IActionResult>(
-                value => Created(string.Empty, new { id = Convert.ToString(value), message = $"{typeof(T).Name} added successfully" }),          // Success: return HTTP 200
+                value => Created(string.Empty, ApiResponse.Success(value, "Data added successfully")),          // Success: return HTTP 200
                 error =>
                 {
                     return error[0].StatusCode switch
@@ -167,7 +167,7 @@ namespace TaskManagement.Presenter.Controllers.Base.v1
             OptionResult<TUpdateDto> result = await _service.UpdateAsync(id, entityUpdate);
 
             return result.Match<IActionResult>(
-                value => Ok(value),          // Success: return HTTP 200
+                value => Ok(ApiResponse.Success(value, "Data updated successfully")),          // Success: return HTTP 200
                 error =>
                 {
                     return error[0].StatusCode switch
@@ -200,7 +200,7 @@ namespace TaskManagement.Presenter.Controllers.Base.v1
             OptionResult<bool> result = await _service.DeleteAsync(id);
 
             return result.Match<IActionResult>(
-                value => Ok($"{typeof(T).Name} deleted successfully"),          // Success: return HTTP 200
+                value => Ok(ApiResponse.Success(value, "Data deleted successfully")),    // Success: return HTTP 200
                 error =>
                 {
                     return error[0].StatusCode switch
