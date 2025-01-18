@@ -9,11 +9,6 @@ namespace TaskManagement.Domain.Entities.Base.Basic
     public interface IBaseBasicEntity<TKey> : IBaseCommonEntity<TKey>
     {
         /// <summary>
-        /// Gets or sets the unique identifier for the entity.
-        /// </summary>
-        [Key]
-        TKey Id { get; set; }
-        /// <summary>
         /// Gets or sets the unique name for the entity.
         /// </summary>
         [Required]

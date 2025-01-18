@@ -7,6 +7,7 @@ using Swashbuckle.AspNetCore.Annotations;
 using System.Security.Claims;
 using TaskManagement.Application.DTOs.AuthDTOs.AppUser;
 using TaskManagement.Application.Services.AuthServices;
+using TaskManagement.Domain.Common.ExtensionMethods;
 using TaskManagement.Domain.Common.JWT;
 using TaskManagement.Domain.Common.ReturnType;
 using TaskManagement.Domain.Entities.Auth;
@@ -136,7 +137,7 @@ namespace TaskManagement.Presenter.Controllers.v1
                 return Unauthorized("Invalid or missing user information.");
             }
 
-            var result = await _appUserService.GetAsync(userId);
+            var result = await _appUserService.GetAsync(userId.ToKey<Guid>());
 
             return result.Match<IActionResult>(
                 value => Ok(value),// Success: return HTTP 200

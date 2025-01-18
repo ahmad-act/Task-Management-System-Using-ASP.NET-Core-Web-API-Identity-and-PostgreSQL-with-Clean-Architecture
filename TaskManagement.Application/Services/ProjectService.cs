@@ -22,7 +22,7 @@ using TaskManagement.Domain.Common.ReturnType;
 
 namespace TaskManagement.Application.Services
 {
-    public class ProjectService : BaseBasicEntityService<Guid, Project, ProjectReadDto, ProjectCreateDto, ProjectUpdateDto>, IProjectService
+    public class ProjectService : BaseBasicWithRelatedOneService<Guid, Project, Workspace, ProjectReadDto, ProjectCreateDto, ProjectUpdateDto>, IProjectService
     {
         private readonly IProjectRepository _repository;
 
@@ -41,7 +41,7 @@ namespace TaskManagement.Application.Services
                 return new[] { ProjectError.MissingId };
             }
 
-            var existingEntity = await _repository.GetAsync(id);
+            var existingEntity = await _repository.GetAsync(Guid.Parse(id));
 
             if (existingEntity == null)
             {
@@ -74,6 +74,22 @@ namespace TaskManagement.Application.Services
         }
 
         #endregion
+
+        public async Task<OptionResult<Project?>> GetAsync(string id)
+        {
+
+            var orderWithCustomer = await _repository.GetWithRelatedOneAsync(
+                id: Guid.Parse(id),
+                foreignKeyNavigation: fk => fk.Workspace,
+                primaryKeySelector: fk => fk.Id
+            );
+
+
+            return orderWithCustomer;
+        }
+
+
+
 
         #region Domain-Specific Methods
 

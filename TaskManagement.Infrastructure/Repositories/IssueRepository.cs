@@ -5,7 +5,7 @@ using TaskManagement.Infrastructure.Repositories.Base;
 
 namespace TaskManagement.Infrastructure.Repositories
 {
-    public class IssueRepository : BaseCommonRepository<Issue>, IIssueRepository
+    public class IssueRepository : BaseCommonRepository<Guid, Issue>, IIssueRepository
     {
         public IssueRepository(AppDbContext dbContext)
             : base(dbContext)

@@ -32,16 +32,16 @@ namespace TaskManagement.Presenter.Controllers.Base.v1
     [ApiVersion("1.1")]
     [Produces("application/json")]
     //[Authorize]
-    public class BaseBasicEntityController<TKey, T, TReadDto, TCreateDto, TUpdateDto> : ControllerBase
+    public class BaseBasicWithRelatedOneController<TKey, T, TRelated, TReadDto, TCreateDto, TUpdateDto> : ControllerBase
         where T : IBaseBasicEntity<Guid>
         where TReadDto : ILinks<Guid>
         where TCreateDto : IBaseCreateDto
         where TUpdateDto : IBaseUpdateDto
     {
-        public readonly IBaseBasicEntityService<TKey, T, TReadDto, TCreateDto, TUpdateDto> _service;
+        public readonly IBaseBasicWithRelatedOneService<TKey, T, TRelated, TReadDto, TCreateDto, TUpdateDto> _service;
         public readonly JwtSettings _jwtSettings;
 
-        public BaseBasicEntityController(IBaseBasicEntityService<TKey, T, TReadDto, TCreateDto, TUpdateDto> service, JwtSettings jwtSettings)
+        public BaseBasicWithRelatedOneController(IBaseBasicWithRelatedOneService<TKey, T, TRelated, TReadDto, TCreateDto, TUpdateDto> service, JwtSettings jwtSettings)
         {
             _service = service;
             _jwtSettings = jwtSettings;
@@ -97,7 +97,7 @@ namespace TaskManagement.Presenter.Controllers.Base.v1
         [SwaggerResponse(500, "Internal server error")]
         public async Task<IActionResult> GetAsync(string id)
         {
-            OptionResult<TReadDto> result = await _service.GetAsync(id.ToKey<TKey>());
+            OptionResult<TReadDto> result = await _service.GetServiceAsync(id.ToKey<TKey>());
 
             return result.Match<IActionResult>(
                 value => Ok(ApiResponse.Success(value, "Data retrieved successfully")),          // Success: return HTTP 200

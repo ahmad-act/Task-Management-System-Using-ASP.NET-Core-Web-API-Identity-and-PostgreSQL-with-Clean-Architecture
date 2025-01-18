@@ -10,6 +10,8 @@ using Asp.Versioning;
 using TaskManagement.Domain.Common.JWT;
 using TaskManagement.Domain.Common.HATEOAS;
 using TaskManagement.Domain.Common.Pagination;
+using TaskManagement.Domain.Common.ReturnType;
+using TaskManagement.Domain.Common.ExtensionMethods;
 
 // Application Layer
 using TaskManagement.Application.ServiceInterfaces.IBase;
@@ -20,7 +22,6 @@ using TaskManagement.Presenter.Filters;
 using TaskManagement.Application.Utilities.Pagination;
 using TaskManagement.Domain.Entities.Base.Common;
 using TaskManagement.Domain.Entities.Base.Basic;
-using TaskManagement.Domain.Common.ReturnType;
 
 namespace TaskManagement.Presenter.Controllers.Base.v1
 {
@@ -95,7 +96,7 @@ namespace TaskManagement.Presenter.Controllers.Base.v1
         [SwaggerResponse(500, "Internal server error")]
         public async Task<IActionResult> GetAsync(string id)
         {
-            OptionResult<TReadDto> result = await _service.GetAsync(id);
+            OptionResult<TReadDto> result = await _service.GetAsync(id.ToKey<TKey>());
 
             return result.Match<IActionResult>(
                 value => Ok(ApiResponse.Success(value, "Data retrieved successfully")),          // Success: return HTTP 200
@@ -164,7 +165,7 @@ namespace TaskManagement.Presenter.Controllers.Base.v1
                 throw new ArgumentException($"Invalid input: {typeof(T).Name} ID cannot be empty or whitespace.");
             }
 
-            OptionResult<TUpdateDto> result = await _service.UpdateAsync(id, entityUpdate);
+            OptionResult<TUpdateDto> result = await _service.UpdateAsync(id.ToKey<TKey>(), entityUpdate);
 
             return result.Match<IActionResult>(
                 value => Ok(ApiResponse.Success(value, "Data updated successfully")),          // Success: return HTTP 200
@@ -197,7 +198,7 @@ namespace TaskManagement.Presenter.Controllers.Base.v1
                 throw new KeyNotFoundException($"Invalid input: {typeof(T).Name} ID cannot be empty or whitespace.");
             }
 
-            OptionResult<bool> result = await _service.DeleteAsync(id);
+            OptionResult<bool> result = await _service.DeleteAsync(id.ToKey<TKey>());
 
             return result.Match<IActionResult>(
                 value => Ok(ApiResponse.Success(value, "Data deleted successfully")),    // Success: return HTTP 200

@@ -98,9 +98,9 @@ namespace TaskManagement.Application.Services.AuthServices
         }
 
 
-        public async Task<OptionResult<AppUserReadDto>> GetAsync(string id)
+        public async Task<OptionResult<AppUserReadDto>> GetAsync(Guid id)
         {
-            var user = await _userManager.FindByIdAsync(id);
+            var user = await _userManager.FindByIdAsync(id.ToString());
 
             if (user == null)
             {
@@ -161,9 +161,9 @@ namespace TaskManagement.Application.Services.AuthServices
             return user.Id;
         }
 
-        public async Task<OptionResult<AppUserUpdateDto>> UpdateAsync(string id, AppUserUpdateDto update, Expression<Func<AppUser, bool>>? predicate = null)
+        public async Task<OptionResult<AppUserUpdateDto>> UpdateAsync(Guid id, AppUserUpdateDto update, Expression<Func<AppUser, bool>>? predicate = null)
         {
-            var existingEntity = await _userManager.FindByIdAsync(id);
+            var existingEntity = await _userManager.FindByIdAsync(id.ToString());
             if (existingEntity == null)
             {
                 return new[] { AppUserError.NotFound };
@@ -183,9 +183,9 @@ namespace TaskManagement.Application.Services.AuthServices
             return update;
         }
 
-        public async Task<OptionResult<bool>> DeleteAsync(string id)
+        public async Task<OptionResult<bool>> DeleteAsync(Guid id)
         {
-            var existingEntity = await _userManager.FindByIdAsync(id);
+            var existingEntity = await _userManager.FindByIdAsync(id.ToString());
 
             if (existingEntity == null)
             {
@@ -206,9 +206,9 @@ namespace TaskManagement.Application.Services.AuthServices
 
         #region Common Methods
 
-        public async Task<OptionResult<bool>> Exists(string id)
+        public async Task<OptionResult<bool>> Exists(Guid id)
         {
-            var existingEntity = await _userManager.FindByIdAsync(id);
+            var existingEntity = await _userManager.FindByIdAsync(id.ToString());
 
             if (existingEntity == null)
             {

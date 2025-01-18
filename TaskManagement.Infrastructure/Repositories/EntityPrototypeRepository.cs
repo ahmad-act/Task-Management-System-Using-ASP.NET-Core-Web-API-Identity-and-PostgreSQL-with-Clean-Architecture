@@ -5,7 +5,7 @@ using TaskManagement.Infrastructure.Repositories.Base;
 
 namespace TaskManagement.Infrastructure.Repositories
 {
-    public class EntityPrototypeRepository : BaseCommonRepository<EntityPrototype>, IEntityPrototypeRepository
+    public class EntityPrototypeRepository : BaseCommonRepository<Guid, EntityPrototype>, IEntityPrototypeRepository
     {
         public EntityPrototypeRepository(AppDbContext dbContext)
             : base(dbContext)

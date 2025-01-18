@@ -31,7 +31,7 @@ namespace TaskManagement.Infrastructure.ExceptionHandler
 
             // Create a failure response using ApiResponse
             var response = ApiResponse.Failure(
-                errors: new[] { new Error(statusCode, title, exception.Message) },
+                errors: new[] { new Error(statusCode, title, string.IsNullOrEmpty(exception.InnerException?.Message) ? exception.Message : $"Message: {exception.Message} [InnerException {exception.InnerException?.Message}]") },
                 message: title
             );
 

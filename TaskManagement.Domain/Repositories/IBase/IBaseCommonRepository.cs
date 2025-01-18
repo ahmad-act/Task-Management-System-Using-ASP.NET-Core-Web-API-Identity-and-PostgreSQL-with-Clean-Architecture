@@ -3,7 +3,7 @@ using TaskManagement.Domain.Common.Pagination;
 
 namespace TaskManagement.Domain.Repositories.IBase
 {
-    public interface IBaseCommonRepository<T>
+    public interface IBaseCommonRepository<TKey, T>
     {
         /// <summary>
         /// Retrieves a paginated list of entities based on the provided search criteria.
@@ -26,7 +26,9 @@ namespace TaskManagement.Domain.Repositories.IBase
         /// <returns>
         /// A task representing the asynchronous operation, containing the entity if found; otherwise, <c>null</c>.
         /// </returns>
-        Task<T?> GetAsync(string id);
+        Task<T?> GetAsync(TKey id);
+
+        Task<List<T>> GetAsync(IEnumerable<TKey> ids);
 
         /// <summary>
         /// Creates a new entity in the data store.

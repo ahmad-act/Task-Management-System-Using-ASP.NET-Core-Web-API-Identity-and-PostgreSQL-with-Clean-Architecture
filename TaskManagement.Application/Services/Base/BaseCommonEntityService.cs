@@ -37,7 +37,7 @@ namespace TaskManagement.Application.Services.Base
     {
         // Injected dependencies
         protected readonly IActivityLog _activityLog;
-        protected readonly IBaseCommonRepository<T> _repository;
+        protected readonly IBaseCommonRepository<TKey, T> _repository;
         protected readonly IMapper _mapper;
         protected readonly IEntityLinkGenerator _entityLinkGenerator;
         protected readonly IAppUserService _appUserService;
@@ -53,7 +53,7 @@ namespace TaskManagement.Application.Services.Base
         /// <param name="appUserService">The service to manage application users.</param>
         /// <param name="mapper">The AutoMapper instance for object mapping.</param>
         /// <param name="updateValidator">The validator for update DTOs.</param>
-        protected BaseCommonEntityService(IActivityLog activityLog, IBaseCommonRepository<T> repository, IEntityLinkGenerator entityLinkGenerator, IAppUserService appUserService, IMapper mapper, IValidator<TCreateDto> createValidator, IValidator<TUpdateDto> updateValidator)
+        protected BaseCommonEntityService(IActivityLog activityLog, IBaseCommonRepository<TKey, T> repository, IEntityLinkGenerator entityLinkGenerator, IAppUserService appUserService, IMapper mapper, IValidator<TCreateDto> createValidator, IValidator<TUpdateDto> updateValidator)
         {
             _activityLog = activityLog;
             _repository = repository;
@@ -116,7 +116,7 @@ namespace TaskManagement.Application.Services.Base
             {
                 var readDto = _mapper.Map<TReadDto>(entityPrototype);
 
-                _entityLinkGenerator.GenerateHateoasLinks<TReadDto, TKey>(readDto, readDto.Id.ToString());
+                _entityLinkGenerator.GenerateHateoasLinks<TKey, TReadDto>(readDto, readDto.Id.ToString());
 
                 return readDto;
             }).ToList();
@@ -137,7 +137,7 @@ namespace TaskManagement.Application.Services.Base
         /// </summary>
         /// <param name="id">The ID of the entity to retrieve.</param>
         /// <returns>The <typeparamref name="TReadDto"/> representing the entity, or an error if not found.</returns>
-        public virtual async Task<OptionResult<TReadDto>> GetAsync(string id)
+        public virtual async Task<OptionResult<TReadDto>> GetAsync(TKey id)
         {
             var existingEntity = await _repository.GetAsync(id);
 
@@ -154,7 +154,7 @@ namespace TaskManagement.Application.Services.Base
             }
             else
             {
-                _entityLinkGenerator.GenerateHateoasLinks<TReadDto, TKey>(entityReadDto);
+                _entityLinkGenerator.GenerateHateoasLinks<TKey, TReadDto>(entityReadDto);
             }
 
             return entityReadDto;
@@ -235,7 +235,7 @@ namespace TaskManagement.Application.Services.Base
         /// <param name="id">The ID of the entity to update.</param>
         /// <param name="updateDto">The DTO containing the updated data for the entity.</param>
         /// <returns>The updated DTO.</returns>
-        public virtual async Task<OptionResult<TUpdateDto>> UpdateAsync(string id, TUpdateDto updateDto, Expression<Func<T, bool>>? predicate = null)
+        public virtual async Task<OptionResult<TUpdateDto>> UpdateAsync(TKey id, TUpdateDto updateDto, Expression<Func<T, bool>>? predicate = null)
         {
             #region Validate input
 
@@ -292,7 +292,7 @@ namespace TaskManagement.Application.Services.Base
         /// </summary>
         /// <param name="id">The ID of the entity to delete.</param>
         /// <returns>True if the entity was deleted successfully, otherwise false.</returns>
-        public virtual async Task<OptionResult<bool>> DeleteAsync(string id)
+        public virtual async Task<OptionResult<bool>> DeleteAsync(TKey id)
         {
             var existingEntity = await _repository.GetAsync(id);
             if (existingEntity == null)
@@ -314,9 +314,9 @@ namespace TaskManagement.Application.Services.Base
 
         #region Common Methods
 
-        public async Task<OptionResult<bool>> Exists(string id)
+        public async Task<OptionResult<bool>> Exists(TKey id)
         {
-            if (string.IsNullOrWhiteSpace(id))
+            if (string.IsNullOrWhiteSpace(Convert.ToString(id)))
             {
                 return new[] { BaseError<T>.MissingId };
             }

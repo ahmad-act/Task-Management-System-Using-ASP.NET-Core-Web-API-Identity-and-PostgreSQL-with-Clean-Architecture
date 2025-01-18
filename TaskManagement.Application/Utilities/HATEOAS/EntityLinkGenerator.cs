@@ -137,7 +137,7 @@ namespace TaskManagement.Application.Utilities.HATEOAS
             }
         }
 
-        public void GenerateHateoasLinks<T, TKey>(T readDto, string? id = null) where T : class, ILinks<TKey>
+        public void GenerateHateoasLinks<TKey,T>(T readDto, string? id = null) where T : class, ILinks<TKey>
         {
             readDto.Links.Add(GenerateLink(LinkOperation.Get, id));
             readDto.Links.Add(GenerateLink(LinkOperation.Create, id));

@@ -6,7 +6,7 @@ using TaskManagement.Presenter.Controllers.Base.v1;
 
 namespace TaskManagement.Presenter.Controllers.v1
 {
-    public class ProjectController : BaseBasicEntityController<Guid, Project, ProjectReadDto, ProjectCreateDto, ProjectUpdateDto>
+    public class ProjectController : BaseBasicWithRelatedOneController<Guid, Project, Workspace, ProjectReadDto, ProjectCreateDto, ProjectUpdateDto>
     {
         private readonly IProjectService _service;
 

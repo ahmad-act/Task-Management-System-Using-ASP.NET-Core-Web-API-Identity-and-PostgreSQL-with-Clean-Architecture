@@ -12,7 +12,7 @@ namespace TaskManagement.Application.ServiceInterfaces.IBase
     /// <typeparam name="TReadDto">The DTO used to read the entity data.</typeparam>
     /// <typeparam name="TCreateDto">The DTO used for creating the entity.</typeparam>
     /// <typeparam name="TUpdateDto">The DTO used for updating the entity.</typeparam>
-    public interface IBaseCommonEntityService<TKey, T, TReadDto, TCreateDto, TUpdateDto>
+    public interface IBaseBasicWithRelatedOneService<TKey, T, TRelated, TReadDto, TCreateDto, TUpdateDto>
     {
         #region CRUD Operations
 
@@ -66,7 +66,7 @@ namespace TaskManagement.Application.ServiceInterfaces.IBase
         /// </summary>
         /// <param name="create">The DTO containing data for creating the new entity.</param>
         /// <returns>The ID of the newly created entity.</returns>
-        Task<OptionResult<TKey>> CreateAsync(TCreateDto create, Expression<Func<T, bool>>? predicate = null, string idFieldName = "Id");
+        Task<OptionResult<TKey>> CreateAsync(TCreateDto create);
 
         /// <summary>
         /// Updates an existing entity by its ID using the provided update DTO.
@@ -74,8 +74,8 @@ namespace TaskManagement.Application.ServiceInterfaces.IBase
         /// <param name="id">The ID of the entity to update.</param>
         /// <param name="update">The DTO containing the updated data for the entity.</param>
         /// <returns>The updated DTO representing the entity.</returns>
-        Task<OptionResult<TUpdateDto>> UpdateAsync(TKey id, TUpdateDto update, Expression<Func<T, bool>>? predicate = null);
-        
+        Task<OptionResult<TUpdateDto>> UpdateAsync(TKey id, TUpdateDto update);
+
         /// <summary>
         /// Deletes an entity by its ID.
         /// </summary>
@@ -87,8 +87,13 @@ namespace TaskManagement.Application.ServiceInterfaces.IBase
 
         #region Common Methods
 
-        Task<OptionResult<bool>> Exists(TKey id);
+        Task<OptionResult<bool>> ExistsByUniqueName(string name);
+
+        Task<OptionResult<T?>> GetByUniqueName(string name);
 
         #endregion
+
+
+        Task<TReadDto?> GetServiceAsync(TKey id);
     }
 }

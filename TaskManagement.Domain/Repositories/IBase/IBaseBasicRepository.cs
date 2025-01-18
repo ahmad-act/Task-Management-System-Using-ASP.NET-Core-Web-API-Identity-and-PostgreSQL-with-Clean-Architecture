@@ -1,6 +1,6 @@
 ﻿namespace TaskManagement.Domain.Repositories.IBase
 {
-    public interface IBaseBasicRepository<T> : IBaseCommonRepository<T>
+    public interface IBaseBasicRepository<TKey, T> : IBaseCommonRepository<TKey, T>
     {
 
     }

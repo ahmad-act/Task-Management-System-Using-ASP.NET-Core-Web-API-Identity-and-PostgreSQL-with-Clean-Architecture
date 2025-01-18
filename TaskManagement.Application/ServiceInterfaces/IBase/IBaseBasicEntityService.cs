@@ -59,7 +59,7 @@ namespace TaskManagement.Application.ServiceInterfaces.IBase
         /// </summary>
         /// <param name="id">The ID of the entity to retrieve.</param>
         /// <returns>The <typeparamref name="TReadDto"/> representing the entity, or an error if the entity is not found.</returns>
-        Task<OptionResult<TReadDto>> GetAsync(string id);
+        Task<OptionResult<TReadDto>> GetAsync(TKey id);
 
         /// <summary>
         /// Creates a new entity based on the provided create DTO.
@@ -74,14 +74,14 @@ namespace TaskManagement.Application.ServiceInterfaces.IBase
         /// <param name="id">The ID of the entity to update.</param>
         /// <param name="update">The DTO containing the updated data for the entity.</param>
         /// <returns>The updated DTO representing the entity.</returns>
-        Task<OptionResult<TUpdateDto>> UpdateAsync(string id, TUpdateDto update);
+        Task<OptionResult<TUpdateDto>> UpdateAsync(TKey id, TUpdateDto update);
 
         /// <summary>
         /// Deletes an entity by its ID.
         /// </summary>
         /// <param name="id">The ID of the entity to delete.</param>
         /// <returns>True if the entity was deleted successfully, otherwise false.</returns>
-        Task<OptionResult<bool>> DeleteAsync(string id);
+        Task<OptionResult<bool>> DeleteAsync(TKey id);
 
         #endregion
 

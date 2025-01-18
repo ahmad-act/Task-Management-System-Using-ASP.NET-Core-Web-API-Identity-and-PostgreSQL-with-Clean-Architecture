@@ -1,8 +1,10 @@
 ﻿using TaskManagement.Application.DTOs.BaseDTOs;
-using TaskManagement.Domain.Common.HATEOAS;
+
 
 namespace TaskManagement.Application.DTOs.Project
 {
+    using TaskManagement.Domain.Entities;
+
     public class ProjectReadDto : BaseReadDto<Guid>
     {
         public Guid WorkspaceId { get; set; }
@@ -13,5 +15,6 @@ namespace TaskManagement.Application.DTOs.Project
         public DateTimeOffset EndDate { get; set; }
         public DateTimeOffset ActualEndDate { get; set; }
         public string Status { get; set; }
+        public Workspace? Workspace { get; set; }
     }
 }

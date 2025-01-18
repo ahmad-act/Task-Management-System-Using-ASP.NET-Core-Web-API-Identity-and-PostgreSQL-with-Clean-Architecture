@@ -1,10 +1,17 @@
-﻿namespace TaskManagement.Domain.Entities.Base.Common
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace TaskManagement.Domain.Entities.Base.Common
 {
     /// <summary>
     /// Defines the contract for a base entity with a primary key.
     /// </summary>
     public interface IBaseCommonEntity<TKey>
     {
+        /// <summary>
+        /// Gets or sets the unique identifier for the entity.
+        /// </summary>
+        [Key]
+        TKey Id { get; set; }
         /// <summary>
         /// Gets or sets the identifier of the user who created the entity.
         /// </summary>

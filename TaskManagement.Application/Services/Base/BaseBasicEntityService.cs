@@ -35,7 +35,7 @@ namespace TaskManagement.Application.Services.Base
     {
         // Injected dependencies
         protected readonly IActivityLog _activityLog;
-        protected readonly IBaseBasicRepository<T> _repository;
+        protected readonly IBaseBasicRepository<TKey, T> _repository;
         protected readonly IMapper _mapper;
         protected readonly IEntityLinkGenerator _entityLinkGenerator;
         protected readonly IAppUserService _appUserService;
@@ -51,7 +51,7 @@ namespace TaskManagement.Application.Services.Base
         /// <param name="appUserService">The service to manage application users.</param>
         /// <param name="mapper">The AutoMapper instance for object mapping.</param>
         /// <param name="validator">The validator for update DTOs.</param>
-        protected BaseBasicEntityService(IActivityLog activityLog, IBaseBasicRepository<T> repository, IEntityLinkGenerator entityLinkGenerator, IAppUserService appUserService, IMapper mapper, IValidator<TCreateDto> createValidator, IValidator<TUpdateDto> updateValidator)
+        protected BaseBasicEntityService(IActivityLog activityLog, IBaseBasicRepository<TKey, T> repository, IEntityLinkGenerator entityLinkGenerator, IAppUserService appUserService, IMapper mapper, IValidator<TCreateDto> createValidator, IValidator<TUpdateDto> updateValidator)
             : base(activityLog, repository, entityLinkGenerator, appUserService, mapper, createValidator, updateValidator)
         {
             _activityLog = activityLog;
@@ -262,7 +262,7 @@ namespace TaskManagement.Application.Services.Base
         /// <param name="id">The ID of the entity to update.</param>
         /// <param name="updateDto">The DTO containing the updated data for the entity.</param>
         /// <returns>The updated DTO.</returns>
-        public virtual async Task<OptionResult<TUpdateDto>> UpdateAsync(string id, TUpdateDto updateDto)
+        public virtual async Task<OptionResult<TUpdateDto>> UpdateAsync(TKey id, TUpdateDto updateDto)
         {
             #region Validate input
 

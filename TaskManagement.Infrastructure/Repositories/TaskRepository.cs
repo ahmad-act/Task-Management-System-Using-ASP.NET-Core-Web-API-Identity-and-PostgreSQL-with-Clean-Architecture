@@ -4,7 +4,7 @@ using TaskManagement.Infrastructure.Repositories.Base;
 
 namespace TaskManagement.Infrastructure.Repositories
 {
-    public class TaskRepository : BaseCommonRepository<Domain.Entities.Task>, ITaskRepository
+    public class TaskRepository : BaseCommonRepository<Guid, Domain.Entities.Task>, ITaskRepository
     {
         public TaskRepository(AppDbContext dbContext)
             : base(dbContext)

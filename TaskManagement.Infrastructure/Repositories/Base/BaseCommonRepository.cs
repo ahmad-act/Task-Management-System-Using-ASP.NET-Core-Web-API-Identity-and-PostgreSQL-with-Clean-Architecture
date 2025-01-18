@@ -11,6 +11,9 @@ using TaskManagement.Application.Utilities.Pagination;
 
 // Infrastructure Layer
 using TaskManagement.Infrastructure.DataContext;
+using TaskManagement.Domain.Entities.Base.Common;
+using MailKit.Search;
+using TaskManagement.Domain.Entities;
 
 namespace TaskManagement.Infrastructure.Repositories.Base
 {
@@ -18,8 +21,8 @@ namespace TaskManagement.Infrastructure.Repositories.Base
     /// Provides basic repository functionality for CRUD operations with pagination and filtering.
     /// </summary>
     /// <typeparam name="T">The type of entity managed by the repository.</typeparam>
-    public abstract class BaseCommonRepository<T> : IBaseCommonRepository<T>
-        where T : class
+    public abstract class BaseCommonRepository<TKey, T> : IBaseCommonRepository<TKey, T>
+        where T : class, IBaseCommonEntity<TKey>
     {
         protected readonly AppDbContext _dbContext;
 
@@ -109,9 +112,29 @@ namespace TaskManagement.Infrastructure.Repositories.Base
         /// </summary>
         /// <param name="id">The ID of the entity to retrieve.</param>
         /// <returns>The entity of type <typeparamref name="T"/>, or null if not found.</returns>
-        public async Task<T?> GetAsync(string id)
+        public async Task<T?> GetAsync(TKey id)
         {
-            return await _dbContext.Set<T>().FindAsync(Guid.Parse(id));
+
+
+
+
+
+
+
+            return await _dbContext.Set<T>().FindAsync(id);
+        }
+
+        /// <summary>
+        /// Retrieves a single entity by its ID.
+        /// </summary>
+        /// <param name="ids">The IDs of the entity to retrieve.</param>
+        /// <returns>The entity of type <typeparamref name="T"/>, or null if not found.</returns>
+        public async Task<List<T>> GetAsync(IEnumerable<TKey> ids)
+        {
+            return await _dbContext.Set<T>()
+                .Where(entity => entity.Id != null && ids.Contains(entity.Id))
+                .AsNoTracking()
+                .ToListAsync();
         }
 
         /// <summary>
@@ -166,5 +189,17 @@ namespace TaskManagement.Infrastructure.Repositories.Base
         {
             return await _dbContext.Set<T>().FirstOrDefaultAsync(predicate);
         }
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }

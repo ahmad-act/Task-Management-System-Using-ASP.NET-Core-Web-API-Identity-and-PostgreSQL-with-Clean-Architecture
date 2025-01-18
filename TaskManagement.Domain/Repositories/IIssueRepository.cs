@@ -3,7 +3,7 @@ using TaskManagement.Domain.Repositories.IBase;
 
 namespace TaskManagement.Domain.Repositories
 {
-    public interface IIssueRepository: IBaseBasicRepository<Issue>
+    public interface IIssueRepository: IBaseBasicRepository<Guid, Issue>
     {
         #region Domain-Specific interface
 

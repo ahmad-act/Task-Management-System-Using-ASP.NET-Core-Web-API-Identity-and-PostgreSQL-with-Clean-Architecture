@@ -40,7 +40,7 @@ namespace TaskManagement.Application.Services
                 return new[] { TaskError.MissingId };
             }
 
-            var existingEntity = await _repository.GetAsync(id);
+            var existingEntity = await _repository.GetAsync(Guid.Parse(id));
 
             if (existingEntity == null)
             {

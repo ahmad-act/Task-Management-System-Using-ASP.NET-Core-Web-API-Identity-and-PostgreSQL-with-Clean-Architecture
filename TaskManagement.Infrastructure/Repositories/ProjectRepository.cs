@@ -5,7 +5,7 @@ using TaskManagement.Infrastructure.Repositories.Base;
 
 namespace TaskManagement.Infrastructure.Repositories
 {
-    public class ProjectRepository : BaseCommonRepository<Project>, IProjectRepository
+    public class ProjectRepository : BaseBasicWithRelatedOneRepository<Guid, Project, Workspace>, IProjectRepository
     {
         public ProjectRepository(AppDbContext dbContext)
             : base(dbContext)
