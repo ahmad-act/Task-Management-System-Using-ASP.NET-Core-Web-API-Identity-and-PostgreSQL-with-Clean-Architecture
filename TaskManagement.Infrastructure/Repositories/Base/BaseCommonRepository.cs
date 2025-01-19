@@ -114,13 +114,6 @@ namespace TaskManagement.Infrastructure.Repositories.Base
         /// <returns>The entity of type <typeparamref name="T"/>, or null if not found.</returns>
         public async Task<T?> GetAsync(TKey id)
         {
-
-
-
-
-
-
-
             return await _dbContext.Set<T>().FindAsync(id);
         }
 

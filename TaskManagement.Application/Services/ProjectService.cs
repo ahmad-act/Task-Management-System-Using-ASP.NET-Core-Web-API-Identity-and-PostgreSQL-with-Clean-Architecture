@@ -22,7 +22,7 @@ using TaskManagement.Domain.Common.ReturnType;
 
 namespace TaskManagement.Application.Services
 {
-    public class ProjectService : BaseBasicWithRelatedOneService<Guid, Project, Workspace, ProjectReadDto, ProjectCreateDto, ProjectUpdateDto>, IProjectService
+    public class ProjectService : BaseEntityWithRelatedOneService<Guid, Project, Workspace, ProjectReadDto, ProjectCreateDto, ProjectUpdateDto>, IProjectService
     {
         private readonly IProjectRepository _repository;
 

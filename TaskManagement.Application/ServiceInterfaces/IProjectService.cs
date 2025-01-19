@@ -5,7 +5,7 @@ using TaskManagement.Domain.Entities;
 
 namespace TaskManagement.Application.ServiceInterfaces
 {
-    public interface IProjectService : IBaseBasicWithRelatedOneService<Guid, Project, Workspace, ProjectReadDto, ProjectCreateDto, ProjectUpdateDto>
+    public interface IProjectService : IBaseEntityWithRelatedOneService<Guid, Project, Workspace, ProjectReadDto, ProjectCreateDto, ProjectUpdateDto>
     {
         Task<OptionResult<bool>> Exists(string id);
         Task<OptionResult<bool>> ExistsByUniqueName(string name);

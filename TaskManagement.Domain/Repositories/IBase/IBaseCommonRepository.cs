@@ -1,10 +1,13 @@
-﻿using System.Linq.Expressions;
+﻿using Microsoft.AspNetCore.Http.HttpResults;
+using System.Linq.Expressions;
 using TaskManagement.Domain.Common.Pagination;
 
 namespace TaskManagement.Domain.Repositories.IBase
 {
     public interface IBaseCommonRepository<TKey, T>
     {
+        #region CURD Operation 
+
         /// <summary>
         /// Retrieves a paginated list of entities based on the provided search criteria.
         /// </summary>
@@ -57,6 +60,10 @@ namespace TaskManagement.Domain.Repositories.IBase
         /// </returns>        
         Task<int> DeleteAsync(T entity);
 
+        #endregion
+
+        #region Common Methods
+
         /// <summary>
         /// Checks if an entity exists in the data store based on a given predicate.
         /// </summary>
@@ -74,5 +81,7 @@ namespace TaskManagement.Domain.Repositories.IBase
         /// A task representing the asynchronous operation, containing the entity if found; otherwise, <c>null</c>.
         /// </returns>
         Task<T?> GetByCondition(Expression<Func<T, bool>> predicate);
+
+        #endregion
     }
 }

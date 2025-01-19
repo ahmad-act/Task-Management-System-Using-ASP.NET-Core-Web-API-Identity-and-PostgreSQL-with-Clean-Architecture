@@ -20,6 +20,8 @@ using TaskManagement.Domain.Common.ReturnType;
 using System.Reflection;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using TaskManagement.Domain.ValueObjects;
+using System.Collections.Generic;
+using TaskManagement.Application.Utilities.Pagination;
 
 
 namespace TaskManagement.Application.Services.Base
@@ -32,14 +34,14 @@ namespace TaskManagement.Application.Services.Base
     /// <typeparam name="TReadDto">The DTO used to read the entity data.</typeparam>
     /// <typeparam name="TCreateDto">The DTO used for creating the entity.</typeparam>
     /// <typeparam name="TUpdateDto">The DTO used for updating the entity.</typeparam>
-    public abstract class BaseBasicWithRelatedOneService<TKey, T, TRelated, TReadDto, TCreateDto, TUpdateDto> : BaseBasicEntityService<TKey, T, TReadDto, TCreateDto, TUpdateDto>, IBaseBasicWithRelatedOneService<TKey, T, TRelated, TReadDto, TCreateDto, TUpdateDto>
+    public abstract class BaseEntityWithRelatedOneService<TKey, T, TRelated, TReadDto, TCreateDto, TUpdateDto> : BaseBasicEntityService<TKey, T, TReadDto, TCreateDto, TUpdateDto>, IBaseEntityWithRelatedOneService<TKey, T, TRelated, TReadDto, TCreateDto, TUpdateDto>
         where T : class, IBaseBasicEntity<TKey>
         where TReadDto : class, ILinks<TKey>
         where TRelated : class
     {
         // Injected dependencies
         protected readonly IActivityLog _activityLog;
-        protected readonly IBaseBasicWithRelatedOneRepository<TKey, T, TRelated> _repository;
+        protected readonly IBaseEntityWithRelatedOneRepository<TKey, T, TRelated> _repository;
         protected readonly IMapper _mapper;
         protected readonly IEntityLinkGenerator _entityLinkGenerator;
         protected readonly IAppUserService _appUserService;
@@ -55,7 +57,7 @@ namespace TaskManagement.Application.Services.Base
         /// <param name="appUserService">The service to manage application users.</param>
         /// <param name="mapper">The AutoMapper instance for object mapping.</param>
         /// <param name="validator">The validator for update DTOs.</param>
-        protected BaseBasicWithRelatedOneService(IActivityLog activityLog, IBaseBasicWithRelatedOneRepository<TKey, T, TRelated> repository, IEntityLinkGenerator entityLinkGenerator, IAppUserService appUserService, IMapper mapper, IValidator<TCreateDto> createValidator, IValidator<TUpdateDto> updateValidator)
+        protected BaseEntityWithRelatedOneService(IActivityLog activityLog, IBaseEntityWithRelatedOneRepository<TKey, T, TRelated> repository, IEntityLinkGenerator entityLinkGenerator, IAppUserService appUserService, IMapper mapper, IValidator<TCreateDto> createValidator, IValidator<TUpdateDto> updateValidator)
             : base(activityLog, repository, entityLinkGenerator, appUserService, mapper, createValidator, updateValidator)
         {
             _activityLog = activityLog;
@@ -77,8 +79,38 @@ namespace TaskManagement.Application.Services.Base
 
         #region CRUD Operations
 
+        public async Task<OptionResult<IPaginatedList<TReadDto>>> ListWithRelatedOneAsync(ListFilter listFilter)
+        {
+            // Determine the name of the related entity dynamically
+            string relatedEntityName = typeof(TRelated).Name;
 
-        public async Task<TReadDto?> GetServiceAsync(TKey id)
+            // Build the navigation expression to include the related entity
+            var foreignKeyExpression = relatedEntityName.BuildNavigationExpression<T, TRelated>();
+
+            // Retrieve the entities with the related data from the repository
+            IPaginatedList<T>? list = await _repository.ListWithRelatedOneAsync(foreignKeyExpression, listFilter);
+
+            // Map the retrieved entities to the read DTO
+            // Map Entity to EntityReadDto
+            var readDtos = list.Items.Select(entityPrototype =>
+            {
+                var readDto = _mapper.Map<TReadDto>(entityPrototype);
+
+                _entityLinkGenerator.GenerateHateoasLinks<TKey, TReadDto>(readDto, readDto.Id.ToString());
+                return readDto;
+            }).ToList();
+
+            _entityLinkGenerator.PaginationLinks<T>(list, listFilter.SearchTerm, listFilter.SortColumn, listFilter.SortOrder);
+
+            // Return a new paginated list of EntityPrototypeReadDto with pagination data and HATEOAS links
+            var paginatedResult = new PaginatedList<TReadDto>(readDtos, list.Page, list.PageSize, list.TotalCount)
+            {
+                Links = list.Links
+            };
+            return paginatedResult;
+        }
+
+        public async Task<TReadDto?> GetWithRelatedOneAsync(TKey id)
         {
             //if (string.IsNullOrWhiteSpace(name))
             //{
@@ -86,39 +118,18 @@ namespace TaskManagement.Application.Services.Base
             //}
 
 
-
-            //Expression<Func<T, TRelated>> foreignKeyNavigation = entity =>
-            //{
-            //    var propertyInfo = GetPropertyInfo(entity, typeof(TRelated).Name);
-
-            //    // Use 'as' because TRelated is now constrained to be a class type
-            //    return propertyInfo as TRelated;
-            //};
-
-            string sdfsdaf = typeof(TRelated).Name;
-            var foreignKeyExpression = BuildNavigationExpression<T, TRelated>(sdfsdaf);
-
+            string relatedEntityName = typeof(TRelated).Name;
+            var foreignKeyExpression = relatedEntityName.BuildNavigationExpression<T, TRelated>();
 
             Expression<Func<T, TKey>>? primaryKeySelector = entity => entity.Id;
 
-            T? ds= await _repository.GetWithRelatedOneAsync(id, foreignKeyExpression, primaryKeySelector); ;
-            TReadDto entityReadDto = _mapper.Map<TReadDto>(ds);
+            T? entity = await _repository.GetWithRelatedOneAsync(id, foreignKeyExpression, primaryKeySelector);
+
+            TReadDto entityReadDto = _mapper.Map<TReadDto>(entity);
+
             return entityReadDto;
         }
 
         #endregion
-
-        public Expression<Func<T1, TRelated1>> BuildNavigationExpression<T1, TRelated1>(string propertyName)
-        {
-            // Create a parameter for the entity (e.g., entity => ...)
-            var parameter = Expression.Parameter(typeof(T1), "entity");
-
-            // Access the property dynamically (entity.PropertyName)
-            var property = Expression.Property(parameter, propertyName);
-
-            // Build the lambda (entity => entity.PropertyName)
-            return Expression.Lambda<Func<T1, TRelated1>>(property, parameter);
-        }
-
     }
 }

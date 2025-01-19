@@ -12,7 +12,7 @@ namespace TaskManagement.Application.ServiceInterfaces.IBase
     /// <typeparam name="TReadDto">The DTO used to read the entity data.</typeparam>
     /// <typeparam name="TCreateDto">The DTO used for creating the entity.</typeparam>
     /// <typeparam name="TUpdateDto">The DTO used for updating the entity.</typeparam>
-    public interface IBaseBasicWithRelatedOneService<TKey, T, TRelated, TReadDto, TCreateDto, TUpdateDto>
+    public interface IBaseEntityWithRelatedOneService<TKey, T, TRelated, TReadDto, TCreateDto, TUpdateDto>
     {
         #region CRUD Operations
 
@@ -93,7 +93,11 @@ namespace TaskManagement.Application.ServiceInterfaces.IBase
 
         #endregion
 
+        #region Get entitity with realated one using FK
 
-        Task<TReadDto?> GetServiceAsync(TKey id);
+        Task<OptionResult<IPaginatedList<TReadDto>>> ListWithRelatedOneAsync(ListFilter listFilter);
+        Task<TReadDto?> GetWithRelatedOneAsync(TKey id);
+
+        #endregion
     }
 }
