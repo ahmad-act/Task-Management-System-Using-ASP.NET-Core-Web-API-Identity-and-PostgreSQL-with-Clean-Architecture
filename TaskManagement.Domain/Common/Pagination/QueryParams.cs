@@ -5,7 +5,7 @@ namespace TaskManagement.Domain.Common.Pagination
     /// <summary>
     /// Represents filtering, sorting, and pagination parameters for retrieving a paginated list of entities.
     /// </summary>
-    public class ListFilter
+    public class QueryParams
     {
         /// <summary>
         /// Gets or sets an optional search term to filter results.

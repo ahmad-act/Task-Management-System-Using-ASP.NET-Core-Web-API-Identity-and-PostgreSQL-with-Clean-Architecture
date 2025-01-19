@@ -79,7 +79,7 @@ namespace TaskManagement.Application.Services.Base
 
         #region CRUD Operations
 
-        public async Task<OptionResult<IPaginatedList<TReadDto>>> ListWithRelatedOneAsync(ListFilter listFilter)
+        public async Task<OptionResult<IPaginatedList<TReadDto>>> ListWithRelatedOneAsync(QueryParams queryParams, Expression<Func<T, bool>>? filter = null)
         {
             // Determine the name of the related entity dynamically
             string relatedEntityName = typeof(TRelated).Name;
@@ -87,8 +87,18 @@ namespace TaskManagement.Application.Services.Base
             // Build the navigation expression to include the related entity
             var foreignKeyExpression = relatedEntityName.BuildNavigationExpression<T, TRelated>();
 
+            Expression<Func<T, bool>>? defaultfilter = null;
+
+            if (!string.IsNullOrWhiteSpace(queryParams.SearchTerm))
+            {
+                // Filter where Name OR Description contain "Search text"
+                filter = x => x.Name.Contains(queryParams.SearchTerm) || (x.Description != null && x.Description.Contains(queryParams.SearchTerm));
+            }
+
+            //return await base.ListAsync(queryParams, filter ?? defaultfilter);
+
             // Retrieve the entities with the related data from the repository
-            IPaginatedList<T>? list = await _repository.ListWithRelatedOneAsync(foreignKeyExpression, listFilter);
+            IPaginatedList<T>? list = await _repository.ListWithRelatedOneAsync(foreignKeyExpression, queryParams, filter ?? defaultfilter);
 
             // Map the retrieved entities to the read DTO
             // Map Entity to EntityReadDto
@@ -100,7 +110,7 @@ namespace TaskManagement.Application.Services.Base
                 return readDto;
             }).ToList();
 
-            _entityLinkGenerator.PaginationLinks<T>(list, listFilter.SearchTerm, listFilter.SortColumn, listFilter.SortOrder);
+            _entityLinkGenerator.PaginationLinks<T>(list, queryParams.SearchTerm, queryParams.SortColumn, queryParams.SortOrder);
 
             // Return a new paginated list of EntityPrototypeReadDto with pagination data and HATEOAS links
             var paginatedResult = new PaginatedList<TReadDto>(readDtos, list.Page, list.PageSize, list.TotalCount)

@@ -6,7 +6,7 @@ using TaskManagement.Presenter.Controllers.Base.v1;
 
 namespace TaskManagement.Presenter.Controllers.v1
 {
-    public class TaskController : BaseBasicEntityController<Guid, Domain.Entities.Task, TaskReadDto, TaskCreateDto, TaskUpdateDto>
+    public class TaskController : BaseEntityWithRelatedOneController<Guid, Domain.Entities.Task, Project, TaskReadDto, TaskCreateDto, TaskUpdateDto>
     {
         private readonly ITaskService _service;
 

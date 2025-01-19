@@ -27,7 +27,7 @@ namespace TaskManagement.Application.Services.AuthServices
 
         #region CRUD Operations
 
-        public async Task<OptionResult<IPaginatedList<AppUserReadDto>>> ListAsync(ListFilter listFilter, Expression<Func<AppUser, bool>>? filter = null)
+        public async Task<OptionResult<IPaginatedList<AppUserReadDto>>> ListAsync(QueryParams queryParams, Expression<Func<AppUser, bool>>? filter = null)
         {
             var userRolesMap = new List<AppUserReadDto>();
 
@@ -53,28 +53,28 @@ namespace TaskManagement.Application.Services.AuthServices
             }
 
             // Apply filtering (searchTerm)
-            if (!string.IsNullOrWhiteSpace(listFilter.SearchTerm))
+            if (!string.IsNullOrWhiteSpace(queryParams.SearchTerm))
             {
                 userRolesMap = userRolesMap
-                    .Where(urm => urm.AppUser.UserName.Contains(listFilter.SearchTerm, StringComparison.OrdinalIgnoreCase) ||
-                                  urm.AppRoles.Any(role => role.Name.Contains(listFilter.SearchTerm, StringComparison.OrdinalIgnoreCase)))
+                    .Where(urm => urm.AppUser.UserName.Contains(queryParams.SearchTerm, StringComparison.OrdinalIgnoreCase) ||
+                                  urm.AppRoles.Any(role => role.Name.Contains(queryParams.SearchTerm, StringComparison.OrdinalIgnoreCase)))
                     .ToList();
             }
 
             // Pagination logic
-            listFilter.Page ??= 1;
-            listFilter.PageSize ??= int.MaxValue;
+            queryParams.Page ??= 1;
+            queryParams.PageSize ??= int.MaxValue;
 
             var paginatedUsers = userRolesMap
-                .Skip(Convert.ToInt32((listFilter.Page.Value - 1) * listFilter.PageSize.Value))
-                .Take(Convert.ToInt32(listFilter.PageSize.Value))
+                .Skip(Convert.ToInt32((queryParams.Page.Value - 1) * queryParams.PageSize.Value))
+                .Take(Convert.ToInt32(queryParams.PageSize.Value))
                 .ToList();
 
             // Sorting logic
-            if (!string.IsNullOrWhiteSpace(listFilter.SortColumn))
+            if (!string.IsNullOrWhiteSpace(queryParams.SortColumn))
             {
-                var isDescending = string.Equals(listFilter.SortOrder, "desc", StringComparison.OrdinalIgnoreCase);
-                paginatedUsers = listFilter.SortColumn.ToLower() switch
+                var isDescending = string.Equals(queryParams.SortOrder, "desc", StringComparison.OrdinalIgnoreCase);
+                paginatedUsers = queryParams.SortColumn.ToLower() switch
                 {
                     "username" => isDescending
                         ? paginatedUsers.OrderByDescending(urm => urm.AppUser.UserName).ToList()
@@ -89,8 +89,8 @@ namespace TaskManagement.Application.Services.AuthServices
             // Create paginated result
             var paginatedResult = new PaginatedList<AppUserReadDto>(
                 paginatedUsers,
-                listFilter.Page.Value,
-                listFilter.PageSize.Value,
+                queryParams.Page.Value,
+                queryParams.PageSize.Value,
                 (uint)userRolesMap.Count
             );
 

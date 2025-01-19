@@ -19,8 +19,8 @@ namespace TaskManagement.Application.ServiceInterfaces.IBase
         /// <summary>
         /// Retrieves a paginated list of entities with optional filtering, sorting, and pagination.
         /// </summary>
-        /// <param name="listFilter">
-        /// An instance of <see cref="ListFilter"/> containing optional parameters:
+        /// <param name="queryParams">
+        /// An instance of <see cref="QueryParams"/> containing optional parameters:
         /// <list type="bullet">
         /// <item>
         /// <description><c>SearchTerm</c>: Optional search term for filtering results.</description>
@@ -52,7 +52,7 @@ namespace TaskManagement.Application.ServiceInterfaces.IBase
         /// </item>
         /// </list>
         /// </returns>
-        Task<OptionResult<IPaginatedList<TReadDto>>> ListAsync(ListFilter listFilter, Expression<Func<T, bool>>? filter = null);
+        Task<OptionResult<IPaginatedList<TReadDto>>> ListAsync(QueryParams queryParams, Expression<Func<T, bool>>? filter = null);
 
         /// <summary>
         /// Retrieves a single entity by its ID.
@@ -95,7 +95,7 @@ namespace TaskManagement.Application.ServiceInterfaces.IBase
 
         #region Get entitity with realated one using FK
 
-        Task<OptionResult<IPaginatedList<TReadDto>>> ListWithRelatedOneAsync(ListFilter listFilter);
+        Task<OptionResult<IPaginatedList<TReadDto>>> ListWithRelatedOneAsync(QueryParams queryParams, Expression<Func<T, bool>>? filter = null);
         Task<TReadDto?> GetWithRelatedOneAsync(TKey id);
 
         #endregion

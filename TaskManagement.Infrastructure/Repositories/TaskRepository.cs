@@ -1,10 +1,11 @@
-﻿using TaskManagement.Domain.Repositories;
+﻿using TaskManagement.Domain.Entities;
+using TaskManagement.Domain.Repositories;
 using TaskManagement.Infrastructure.DataContext;
 using TaskManagement.Infrastructure.Repositories.Base;
 
 namespace TaskManagement.Infrastructure.Repositories
 {
-    public class TaskRepository : BaseCommonRepository<Guid, Domain.Entities.Task>, ITaskRepository
+    public class TaskRepository : BaseEntityWithRelatedOneRepository<Guid, Domain.Entities.Task, Project>, ITaskRepository
     {
         public TaskRepository(AppDbContext dbContext)
             : base(dbContext)

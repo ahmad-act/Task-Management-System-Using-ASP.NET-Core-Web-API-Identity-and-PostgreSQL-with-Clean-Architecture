@@ -69,8 +69,8 @@ namespace TaskManagement.Application.Services.Base
         /// <summary>
         /// Retrieves a paginated list of entities with optional filtering, sorting, and pagination.
         /// </summary>
-        /// <param name="listFilter">
-        /// An instance of <see cref="ListFilter"/> containing optional parameters:
+        /// <param name="queryParams">
+        /// An instance of <see cref="QueryParams"/> containing optional parameters:
         /// <list type="bullet">
         /// <item>
         /// <description><c>SearchTerm</c>: Optional search term for filtering results.</description>
@@ -102,9 +102,9 @@ namespace TaskManagement.Application.Services.Base
         /// </item>
         /// </list>
         /// </returns>
-        public virtual async Task<OptionResult<IPaginatedList<TReadDto>>> ListAsync(ListFilter listFilter, Expression<Func<T, bool>>? filter = null)
+        public virtual async Task<OptionResult<IPaginatedList<TReadDto>>> ListAsync(QueryParams queryParams, Expression<Func<T, bool>>? filter = null)
         {
-            IPaginatedList<T>? list = await _repository.ListAsync(listFilter, filter);
+            IPaginatedList<T>? list = await _repository.ListAsync(queryParams, filter);
 
             if (list == null)
             {
@@ -121,7 +121,7 @@ namespace TaskManagement.Application.Services.Base
                 return readDto;
             }).ToList();
 
-            _entityLinkGenerator.PaginationLinks<T>(list, listFilter.SearchTerm, listFilter.SortColumn, listFilter.SortOrder);
+            _entityLinkGenerator.PaginationLinks<T>(list, queryParams.SearchTerm, queryParams.SortColumn, queryParams.SortOrder);
 
             // Return a new paginated list of EntityPrototypeReadDto with pagination data and HATEOAS links
             var paginatedResult = new PaginatedList<TReadDto>(readDtos, list.Page, list.PageSize, list.TotalCount)

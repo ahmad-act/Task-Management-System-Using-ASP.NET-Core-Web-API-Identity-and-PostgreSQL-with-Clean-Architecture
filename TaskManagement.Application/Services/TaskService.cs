@@ -18,10 +18,11 @@ using TaskManagement.Application.ServiceInterfaces;
 using TaskManagement.Application.Services.AuthServices;
 using TaskManagement.Application.DTOs.Task;
 using TaskManagement.Domain.Common.ReturnType;
+using TaskManagement.Domain.Entities;
 
 namespace TaskManagement.Application.Services
 {
-    public class TaskService : BaseBasicEntityService<Guid, Domain.Entities.Task, TaskReadDto, TaskCreateDto, TaskUpdateDto>, ITaskService
+    public class TaskService : BaseEntityWithRelatedOneService<Guid, Domain.Entities.Task, Project, TaskReadDto, TaskCreateDto, TaskUpdateDto>, ITaskService
     {
         private readonly ITaskRepository _repository;
 

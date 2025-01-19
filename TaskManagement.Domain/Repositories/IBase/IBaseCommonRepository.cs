@@ -20,7 +20,7 @@ namespace TaskManagement.Domain.Repositories.IBase
         /// <returns>
         /// A task representing the asynchronous operation, containing a paginated list of entities.
         /// </returns>
-        Task<IPaginatedList<T>> ListAsync(ListFilter listFilter, Expression<Func<T, bool>>? filter = null);
+        Task<IPaginatedList<T>> ListAsync(QueryParams queryParams, Expression<Func<T, bool>>? filter = null);
 
         /// <summary>
         /// Retrieves an entity by its unique identifier.

@@ -38,8 +38,8 @@ namespace TaskManagement.Infrastructure.Repositories.Base
         /// <summary>
         /// Retrieves a paginated list of entities with optional filtering, sorting, and pagination.
         /// </summary>
-        /// <param name="listFilter">
-        /// An instance of <see cref="ListFilter"/> containing optional parameters:
+        /// <param name="queryParams">
+        /// An instance of <see cref="QueryParams"/> containing optional parameters:
         /// <list type="bullet">
         /// <item>
         /// <description><c>SearchTerm</c>: Optional search term for filtering results.</description>
@@ -71,7 +71,7 @@ namespace TaskManagement.Infrastructure.Repositories.Base
         /// </item>
         /// </list>
         /// </returns>
-        public async Task<IPaginatedList<T>> ListAsync(ListFilter listFilter, Expression<Func<T, bool>>? filter = null)
+        public async Task<IPaginatedList<T>> ListAsync(QueryParams queryParams, Expression<Func<T, bool>>? filter = null)
         {
             IQueryable<T> query = _dbContext.Set<T>()
                 .AsNoTracking()
@@ -84,18 +84,18 @@ namespace TaskManagement.Infrastructure.Repositories.Base
             }
 
             // Apply sorting
-            if (!string.IsNullOrWhiteSpace(listFilter.SortColumn))
+            if (!string.IsNullOrWhiteSpace(queryParams.SortColumn))
             {
-                var isDescending = listFilter.SortOrder?.ToLower() == "desc";
+                var isDescending = queryParams.SortOrder?.ToLower() == "desc";
                 query = isDescending
-                    ? query.OrderByDescending(_dbContext.GetSortExpression<T>(listFilter.SortColumn))
-                    : query.OrderBy(_dbContext.GetSortExpression<T>(listFilter.SortColumn));
+                    ? query.OrderByDescending(_dbContext.GetSortExpression<T>(queryParams.SortColumn))
+                    : query.OrderBy(_dbContext.GetSortExpression<T>(queryParams.SortColumn));
             }
 
             int totalRecords = await query.CountAsync();
 
-            uint pageNum = listFilter.Page ?? 1;
-            uint recordsPerPage = listFilter.PageSize ?? (uint)totalRecords;
+            uint pageNum = queryParams.Page ?? 1;
+            uint recordsPerPage = queryParams.PageSize ?? (uint)totalRecords;
 
             // Return all records if page or pageSize is not specified
             if (pageNum == 0 || recordsPerPage == 0)

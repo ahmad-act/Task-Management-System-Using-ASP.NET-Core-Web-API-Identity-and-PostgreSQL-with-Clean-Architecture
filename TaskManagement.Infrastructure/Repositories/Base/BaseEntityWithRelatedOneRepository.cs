@@ -36,7 +36,7 @@ namespace TaskManagement.Infrastructure.Repositories.Base
             _dbContext = dbContext;
         }
 
-        public async Task<IPaginatedList<T>> ListWithRelatedOneAsync(Expression<Func<T, TRelated>> foreignKeyNavigation, ListFilter listFilter, Expression<Func<T, bool>>? filter = null)
+        public async Task<IPaginatedList<T>> ListWithRelatedOneAsync(Expression<Func<T, TRelated>> foreignKeyNavigation, QueryParams queryParams, Expression<Func<T, bool>>? filter = null)
         {
             var query = _dbContext.Set<T>()
                 .AsQueryable()
@@ -53,18 +53,18 @@ namespace TaskManagement.Infrastructure.Repositories.Base
             }
 
             // Apply sorting
-            if (!string.IsNullOrWhiteSpace(listFilter.SortColumn))
+            if (!string.IsNullOrWhiteSpace(queryParams.SortColumn))
             {
-                var isDescending = listFilter.SortOrder?.ToLower() == "desc";
+                var isDescending = queryParams.SortOrder?.ToLower() == "desc";
                 query = isDescending
-                    ? query.OrderByDescending(_dbContext.GetSortExpression<T>(listFilter.SortColumn))
-                    : query.OrderBy(_dbContext.GetSortExpression<T>(listFilter.SortColumn));
+                    ? query.OrderByDescending(_dbContext.GetSortExpression<T>(queryParams.SortColumn))
+                    : query.OrderBy(_dbContext.GetSortExpression<T>(queryParams.SortColumn));
             }
 
             int totalRecords = await query.CountAsync();
 
-            uint pageNum = listFilter.Page ?? 1;
-            uint recordsPerPage = listFilter.PageSize ?? (uint)totalRecords;
+            uint pageNum = queryParams.Page ?? 1;
+            uint recordsPerPage = queryParams.PageSize ?? (uint)totalRecords;
 
             // Return all records if page or pageSize is not specified
             if (pageNum == 0 || recordsPerPage == 0)

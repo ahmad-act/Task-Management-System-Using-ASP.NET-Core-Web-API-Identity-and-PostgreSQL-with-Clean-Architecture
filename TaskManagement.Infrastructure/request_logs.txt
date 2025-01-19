@@ -46185,3 +46185,6798 @@ Request Data:
 
 -------------------------
 
+------ Request Log ------
+Timestamp: 2025-01-19T09:08:36.3591333Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/app-users/login
+Request Data:
+{"userName":"test@test.com","password":"Admin!123","rememberMe":false}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T09:08:49.5708748Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T09:08:55.9761687Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T09:08:56.0488681Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T09:08:56.0565627Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T09:09:12.7256121Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T09:09:12.7910564Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T09:09:22.4079894Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T09:09:22.4673124Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T09:09:22.4804341Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T09:09:45.9398439Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/projects
+Request Data:
+{"name":"Project 1","description":"Project 1","status":"Pending","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T09:09:46.4955502Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T09:10:25.9029757Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/projects/ea2a16f6-c634-473e-8733-d1a94a502341
+Request Data:
+{"name":"Workspace1","description":"Workspace1","status":"Pending","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T09:10:32.9726443Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T09:10:32.9886764Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T09:10:33.9336371Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T09:10:35.1462085Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:14:13.2652718Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:19:28.2650000Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/app-users/login
+Request Data:
+{"userName":"test@test.com","password":"Admin!123","rememberMe":false}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:19:46.5460447Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:19:52.6591116Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:19:52.7971669Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:19:52.7984668Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:21:20.4152373Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:21:20.4204918Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:21:21.8416738Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:23:55.4302799Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:23:56.7098630Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:24:49.8774397Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:24:50.9947493Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:25:10.3488621Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:25:11.4643276Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:25:17.9962578Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:25:19.1005055Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:25:23.8507453Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:25:27.8743968Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:25:39.0804827Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:25:40.1637602Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:26:07.8568966Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:26:07.8614426Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:27:20.0299026Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:27:20.3303793Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:27:20.3345402Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:27:36.4150160Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:27:36.4205172Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:27:36.4255259Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:27:48.6544028Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:27:48.6735690Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:27:48.6744166Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:31:17.9729562Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:31:18.2250664Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:31:18.2385302Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:31:25.1676547Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:31:25.2641178Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:31:26.5338917Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:32:11.3173682Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:32:11.4243036Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:32:11.4584599Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:32:29.9888442Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:32:30.1002418Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:32:30.1043086Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:34:21.4272072Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:34:21.5065741Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:34:21.5172981Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:34:44.1223965Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:34:44.4080408Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:34:44.4126944Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:35:17.7810239Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:35:17.9194568Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:35:17.9343508Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:38:56.0492408Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:38:56.8411970Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:40:03.2493418Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:40:03.3465261Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:40:04.4837986Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:40:09.1904297Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:40:09.2677440Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:40:09.2804070Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:43:26.4346984Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:43:27.6901455Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:43:27.6933175Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:50:44.0502640Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:51:32.8924610Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:51:33.0057819Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:51:34.4862384Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:51:43.1421285Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:52:53.8025541Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:54:27.8727057Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:54:57.1065577Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:57:15.4887236Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:57:15.6034383Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:58:28.2234563Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:58:28.2251848Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:58:28.2588804Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:59:19.2224550Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:59:19.2561121Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:59:34.9968408Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:59:35.0037769Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:59:35.0107495Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T11:59:37.2755724Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:00:36.9735595Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:00:36.9772907Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:00:37.0135516Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:00:42.5940283Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:00:42.5987717Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:00:42.6179234Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:00:44.4515808Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:01:59.8707799Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:01:59.8756839Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:01:59.8877460Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:02:07.4693441Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:02:43.5937126Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:02:43.5976473Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:02:43.6180127Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:02:46.9835886Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:03:08.8617596Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:03:18.2633319Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:04:07.1730736Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:04:14.8123827Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:04:14.9058477Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:04:14.9071092Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:04:15.8913327Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:04:50.2960870Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:06:13.9013531Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:06:13.9670851Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:06:14.0007010Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:07:54.5649657Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:08:44.6101696Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:09:35.6461447Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:09:35.9102415Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:09:35.9471629Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:09:40.3537033Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:09:52.5312103Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:10:41.2856602Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:10:47.3587507Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:10:47.5455089Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:10:47.5460917Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:10:53.1334653Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:11:09.2941947Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:11:12.6167475Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:11:13.0818726Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:11:13.1090966Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:11:15.9865664Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:15:52.5937683Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:15:54.0369768Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:16:17.1707352Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:16:17.2691023Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:16:26.3751870Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:16:26.3863217Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:17:02.2140722Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:17:33.6721097Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:18:07.0265552Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:18:07.2438108Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:18:07.2663462Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:20:04.9283700Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/app-users/login
+Request Data:
+{"userName":"test@test.com","password":"Admin!123","rememberMe":false}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:20:15.8017299Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:20:22.4113770Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:20:22.4775985Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:20:22.4975653Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:20:24.6401230Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:20:31.7766605Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:20:42.7348031Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:20:45.8966053Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/projects/9a409213-8f2d-4a07-8e01-ad59d97d05d0
+Request Data:
+{"name":"string","description":"string","status":"string","workspaceId":"b70d705a-5deb-4459-ba34-4bef8a8fe4b6","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:23:08.2693727Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/app-users/login
+Request Data:
+{"userName":"test@test.com","password":"Admin!123","rememberMe":false}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:23:16.4234369Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:23:28.4768968Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:24:05.5114728Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:24:20.4903968Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:24:20.5552562Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:24:20.6038463Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:24:25.1847749Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:24:26.9176062Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/projects/9a409213-8f2d-4a07-8e01-ad59d97d05d0
+Request Data:
+{"name":"string","description":"string","status":"string","workspaceId":"b70d705a-5deb-4459-ba34-4bef8a8fe4b6","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:24:27.1494994Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:24:28.4451784Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:24:46.2219630Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/projects
+Request Data:
+{"name":"gsdfg","description":"dsfg","status":"Done","workspaceId":"90fd3697-7cf1-417b-868b-33d3b02da7b8","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:24:46.2890411Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:24:46.3072323Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:24:54.2268475Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:24:54.3213741Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:24:54.3470022Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:24:59.3744072Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:25:13.8258921Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/projects/3500d9f5-7dc8-4b3c-8ed9-36e257d3a280
+Request Data:
+{"name":"gsdfg2","description":"dsfg2","status":"Pesding","workspaceId":"b685e557-3e48-421b-95dc-69e772be80dc","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:25:13.8539027Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:25:13.8556657Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:25:21.0476442Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:25:21.1027395Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:25:22.2326779Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:28:37.1699245Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:28:38.4656678Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:33:12.6692887Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:33:17.0090202Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:33:17.1555139Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:33:17.1651181Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:33:21.6432189Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:33:40.6408615Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:33:40.7461631Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:33:42.0460536Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T12:33:42.2992123Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T13:16:48.4248302Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/app-users/login
+Request Data:
+{"userName":"test@test.com","password":"Admin!123","rememberMe":false}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T13:17:06.1146616Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T13:17:26.8591870Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T13:17:27.0159881Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T13:17:35.0199172Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/workspaces/d5f5cac2-f1f0-4df6-ac4d-33a495eb61c9
+Request Data:
+{"name":"a1sad123","description":"asdfsa","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T13:17:35.2249720Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T13:17:39.9720234Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/workspaces
+Request Data:
+{"name":"cxvz","description":"xzcv","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T13:17:40.0464447Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T13:17:40.0604033Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T13:17:52.0482978Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/workspaces
+Request Data:
+{"name":"a1sad123","description":"a1sad1232","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T13:17:52.0652268Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T13:18:03.9449528Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/workspaces/df454b81-1d65-4260-b84c-9a845ed8a6f6
+Request Data:
+{"name":"a1sad123","description":"sssssss","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T13:18:03.9606804Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T13:18:18.7313229Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T13:18:18.9888723Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T13:18:19.1600162Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T13:18:30.9252916Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T13:18:49.5102164Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/projects
+Request Data:
+{"name":"xzc","description":"zxc","status":"zx","workspaceId":"c80b27b9-9f27-42a8-aeb6-ecc54064a788","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T13:18:49.5879590Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T13:18:49.6311923Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T13:19:00.3950285Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T13:19:07.4201444Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/projects
+Request Data:
+{"name":"xzc","description":"xzc","status":"xzc","workspaceId":"c80b27b9-9f27-42a8-aeb6-ecc54064a788","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T13:19:07.4426842Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T13:20:18.9130939Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T13:20:19.0565033Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/issues?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T13:20:21.4985856Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T13:20:21.5746240Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T13:20:21.5930253Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T13:20:24.1657889Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T13:20:24.2399967Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T14:51:32.8423199Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/app-users/login
+Request Data:
+{"userName":"test@test.com","password":"Admin!123","rememberMe":false}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T14:51:44.8867630Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T14:51:55.8277214Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T14:51:55.9025471Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T14:52:09.1149457Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/workspaces/d5f5cac2-f1f0-4df6-ac4d-33a495eb61c9
+Request Data:
+{"name":"a1sad123","description":"asdfsa","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T14:52:09.3597842Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T14:52:16.5149468Z
+Sender: 127.0.0.1
+Method: DELETE
+URI: /api/v1/workspaces/d5f5cac2-f1f0-4df6-ac4d-33a495eb61c9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T14:52:16.7097869Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T14:58:09.7926129Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T14:58:09.8778445Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T14:58:27.3560944Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T14:58:27.6711651Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T15:01:39.0889061Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T15:01:40.3384460Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T15:04:23.5800825Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T15:04:24.7637743Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T15:29:07.1033470Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T15:37:44.7010656Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T15:46:37.8034059Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T15:47:18.4962602Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T15:50:41.4672632Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T15:55:22.7696626Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T15:55:28.7675516Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/app-users/login
+Request Data:
+{"userName":"test@test.com","password":"Admin!123","rememberMe":false}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T15:55:32.5675170Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T15:55:38.2182046Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T15:55:38.2789580Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T15:55:41.1912531Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=2&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=2&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T15:55:43.6411470Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=3&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=3&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T15:55:46.3361824Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=4&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=4&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T15:55:48.5502332Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=5&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=5&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T15:55:51.3411890Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T15:56:49.9570314Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/workspaces/28d083e2-daac-482b-a5b8-44b321a860ef
+Request Data:
+{"name":"a1sad1232","description":"asdfsa","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T15:56:50.0528092Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T15:56:50.0880252Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T15:56:59.7143856Z
+Sender: 127.0.0.1
+Method: DELETE
+URI: /api/v1/workspaces/df454b81-1d65-4260-b84c-9a845ed8a6f6
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T15:56:59.7391597Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T15:56:59.7405322Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T15:57:13.1869840Z
+Sender: 127.0.0.1
+Method: DELETE
+URI: /api/v1/workspaces/c80b27b9-9f27-42a8-aeb6-ecc54064a788
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T15:57:13.2059655Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T15:57:13.2235730Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T15:59:15.3235528Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?searchTerm=bnm&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=bnm&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T15:59:21.0694104Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/workspaces/90fd3697-7cf1-417b-868b-33d3b02da7b8
+Request Data:
+{"name":"bnm","description":"mnb","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T15:59:21.0893015Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?searchTerm=bnm&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=bnm&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T15:59:21.1047745Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?searchTerm=bnm&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=bnm&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T15:59:30.1344225Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/workspaces/90fd3697-7cf1-417b-868b-33d3b02da7b8
+Request Data:
+{"name":"bnm2","description":"mnb2","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T15:59:30.1817593Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?searchTerm=bnm&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=bnm&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T15:59:30.1943270Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?searchTerm=bnm&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=bnm&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T15:59:40.9290794Z
+Sender: 127.0.0.1
+Method: DELETE
+URI: /api/v1/workspaces/90fd3697-7cf1-417b-868b-33d3b02da7b8
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T15:59:40.9440335Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?searchTerm=bnm&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=bnm&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T15:59:40.9456359Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?searchTerm=bnm&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=bnm&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T15:59:48.4083434Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:03:49.0911268Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:03:49.2022527Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:05:53.9236183Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:05:54.0121241Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:07:46.1330600Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?searchTerm=asdas&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=asdas&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:07:51.9015860Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?searchTerm=111111&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=111111&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:07:57.9742116Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/workspaces/a8b093d1-8945-479f-8a48-a56fc81cc6e4
+Request Data:
+{"name":"string111111111","description":"string1111111111","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:07:58.0005663Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?searchTerm=111111&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=111111&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:07:58.0009670Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?searchTerm=111111&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=111111&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:15:33.0210177Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:17:37.2413825Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:17:37.2434724Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:17:40.0673583Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?searchTerm=bv&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=bv&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:17:47.7253047Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?searchTerm=bvbn&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=bvbn&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:17:53.8715891Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/workspaces
+Request Data:
+{"name":"bvbn","description":"bvbn","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:17:54.1650852Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?searchTerm=bvbn&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=bvbn&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:17:54.1796891Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?searchTerm=bvbn&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=bvbn&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:27:18.6387374Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:27:27.4738489Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:27:34.7296075Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?searchTerm=dsf&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=dsf&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:27:38.5264134Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:27:41.6983908Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:27:41.7974151Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:27:48.2814465Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?searchTerm=a1sad1232&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=a1sad1232&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:27:54.0837134Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:27:59.6552916Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/workspaces/28d083e2-daac-482b-a5b8-44b321a860ef
+Request Data:
+{"name":"a1sad1232","description":"asdfsa","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:27:59.7895892Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:27:59.8037236Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:28:06.6379603Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?searchTerm=aaaa&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=aaaa&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:28:11.6165500Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:28:13.3776342Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=2&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=2&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:28:16.1226651Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=3&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=3&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:28:18.5694786Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=4&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=4&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:28:20.8553252Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=5&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=5&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:28:26.2735316Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:28:48.9074719Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:28:49.0137386Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:29:12.0598994Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:29:12.1497260Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:29:14.2960988Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?searchTerm=zcxzc&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=zcxzc&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:29:18.0877852Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:32:52.2226874Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:33:29.9488966Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:33:52.1044416Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:33:53.2800795Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:33:54.6370670Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:33:54.7088604Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:34:08.5129019Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/workspaces/28d083e2-daac-482b-a5b8-44b321a860ef
+Request Data:
+{"name":"a1sad1232","description":"asdfsa","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:34:08.6426058Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:34:08.6443631Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:34:33.7329863Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:34:33.8653167Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:34:49.6680110Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:34:49.7287009Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:39:58.6914754Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:40:18.7395480Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:41:35.7730586Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:41:35.7754787Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:45:28.0628065Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:45:28.1385020Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:45:34.1337356Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?searchTerm=dsf&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=dsf&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:45:36.7900948Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?searchTerm=dsfsdf&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=dsfsdf&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:45:39.8591227Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:45:45.9057925Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/workspaces
+Request Data:
+{"name":"dfg","description":"dsfgds","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:45:46.0828726Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:45:46.1030152Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:45:54.4230136Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/workspaces/cb378880-5138-4bc0-b2d8-e39a2301c800
+Request Data:
+{"name":"aaaaaa","description":"ssssssss","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:45:55.2336673Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:45:55.2342731Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:45:59.0386649Z
+Sender: 127.0.0.1
+Method: DELETE
+URI: /api/v1/workspaces/cb378880-5138-4bc0-b2d8-e39a2301c800
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:45:59.2062676Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:45:59.2151607Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:47:08.4432224Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:49:49.7860215Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:51:31.8912842Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:51:31.9531618Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:51:33.4539376Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:51:39.5617259Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:51:40.8831096Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/projects/ea2a16f6-c634-473e-8733-d1a94a502341
+Request Data:
+{"name":"Workspace1","description":"Workspace1","status":"Pending","workspaceId":"b70d705a-5deb-4459-ba34-4bef8a8fe4b6","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:51:41.0150400Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:51:41.0159138Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:52:36.4138061Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:52:36.4839454Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:52:38.6304707Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:52:38.6972557Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:52:40.5405439Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:52:40.5976265Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:52:40.6271236Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:52:47.9263280Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:52:50.7738690Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:52:50.8404438Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:52:50.8483205Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:53:00.8680920Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:53:06.8903098Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/projects
+Request Data:
+{"name":"cxvzx","description":"xzcv","status":"xzcv","workspaceId":"c5cf39d0-cbeb-479e-a125-b7be13b7a82e","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:53:06.9435901Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:53:06.9615732Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:53:20.1647582Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:53:37.2014168Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/projects
+Request Data:
+{"name":"qqqqq","description":"wwwww","status":"eeeeee","workspaceId":"b685e557-3e48-421b-95dc-69e772be80dc","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:53:37.2248150Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:53:37.2423833Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:53:50.0408564Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:53:57.5873910Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/projects/1ec43a22-5f97-42d5-8c2f-0463e7370e24
+Request Data:
+{"name":"qqqqq2","description":"wwwww2","status":"eeeeee2","workspaceId":"d4b2c551-9ae9-42ee-b2d8-d017c58915e0","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:53:57.6285745Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:53:57.6297018Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:54:03.7211707Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:54:03.7857950Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:54:03.8331941Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:54:19.8197586Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:54:19.8815100Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:56:28.7172034Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/app-users/login
+Request Data:
+{"userName":"test@test.com","password":"Admin!123","rememberMe":false}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:56:31.0730990Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:56:39.3815970Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T16:56:39.4600432Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T18:42:12.8746239Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/app-users/login
+Request Data:
+{"userName":"test@test.com","password":"Admin!123","rememberMe":false}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T18:42:24.4839761Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T18:42:38.8372411Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T18:42:38.9100510Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/issues?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T18:42:38.9148678Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T18:42:43.5217015Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T18:42:43.5754727Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T18:42:43.5857447Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T18:44:42.0501709Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:32:22.6660390Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:32:24.2182358Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:32:27.1527566Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:32:27.2406165Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:32:27.2415518Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:32:35.3445655Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:32:35.4084475Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:32:35.4124102Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:32:41.5119913Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:32:41.5800647Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/issues?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:32:41.5920002Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:32:46.1498276Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:32:46.2140352Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:32:46.2277706Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:32:53.5503768Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:32:53.6194418Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:32:53.6205417Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:32:59.5830994Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:32:59.6471711Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:32:59.7004763Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:38:24.6372174Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:38:25.6487224Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:38:33.1060841Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:38:34.0747511Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:38:34.0807660Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:38:57.1035129Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:38:58.0765986Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:38:58.0826180Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:39:01.8013216Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:39:02.7850507Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:39:02.7888449Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:39:10.2076305Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:39:11.1668032Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:39:11.1709029Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:39:25.2381493Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:39:26.2290132Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:39:26.2461483Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:39:28.5829429Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:39:29.5679848Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:39:29.5706024Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:39:36.0244214Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:39:37.0130370Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:39:37.0160802Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:41:26.9009932Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:41:28.3053801Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:41:28.3064348Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:41:30.8792157Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:41:31.8351205Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:41:31.8479956Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:41:37.9115959Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:41:39.0189416Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:41:39.0296932Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:41:42.9854557Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:41:43.9711674Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:41:44.0040051Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:42:48.1268976Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:42:59.7305775Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:43:12.8691044Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:43:36.1423743Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:43:43.2629468Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:43:53.3847968Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:44:00.4780719Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:44:13.9320258Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:44:13.9360397Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:44:13.9426908Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:44:16.1139874Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/app-users/login
+Request Data:
+{"userName":"test@test.com","password":"Admin!123","rememberMe":false}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:44:19.1359483Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:44:34.4774029Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:44:34.5419014Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:44:34.5494588Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:45:37.3731137Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:45:37.3960337Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:45:38.5698065Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:57:04.4737744Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/app-users/login
+Request Data:
+{"userName":"test@test.com","password":"Admin!123","rememberMe":false}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:57:24.7203924Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:57:37.5749818Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:57:37.6509302Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:57:37.6605313Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T19:57:57.2797594Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:00:14.4834797Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/app-users/login
+Request Data:
+{"userName":"test@test.com","password":"Admin!123","rememberMe":false}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:00:17.1613852Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:00:27.8511159Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:00:27.9327738Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:00:27.9448859Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:00:30.1070986Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:02:01.5175959Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:02:01.5281696Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:03:58.9210156Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:03:59.8907839Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:03:59.9284863Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:04:03.6869119Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:04:04.6527274Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:04:04.6628874Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:04:11.1069363Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:04:12.0801193Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:04:12.0941721Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:05:49.3353781Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:05:49.3431356Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:05:49.3788101Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:05:54.3543595Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:06:04.3646949Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/tasks
+Request Data:
+{"name":"rttr","description":"ery","status":"eryer","taskId":"65972dc1-3115-4aed-807f-5ea667442063","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:06:04.8497779Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:06:33.1571695Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/tasks
+Request Data:
+{"name":"rttr","description":"ery","status":"eryer","taskId":"3500d9f5-7dc8-4b3c-8ed9-36e257d3a280","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:06:33.3095177Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:08:58.3079433Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/tasks
+Request Data:
+{"name":"rttr","description":"ery","status":"eryer","taskId":"3500d9f5-7dc8-4b3c-8ed9-36e257d3a280","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:11:13.6552031Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:12:10.3755314Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/tasks
+Request Data:
+{"name":"rttr","description":"ery","status":"eryer","taskId":"3500d9f5-7dc8-4b3c-8ed9-36e257d3a280","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:12:34.5669553Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:13:09.7703460Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:13:20.6681427Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:13:45.2432279Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:14:29.7623538Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:15:44.2339158Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:15:44.3894399Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:15:44.3937896Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:15:48.9863375Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:15:49.0732236Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:15:49.0825215Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:16:26.2931389Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:16:26.3695180Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:16:26.4092076Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:16:31.5588455Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:16:31.6264154Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:16:31.6562945Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:16:40.2856609Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:16:40.3500487Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:16:40.3557930Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:16:42.5554494Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:16:42.6220875Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:16:42.6342392Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:16:56.2891770Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:16:56.3565447Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:16:57.6051475Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:17:08.2760238Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:17:16.4151876Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/tasks
+Request Data:
+{"name":"rtre","description":"ert","status":"erter","projectId":"65972dc1-3115-4aed-807f-5ea667442063","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:17:28.4940967Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:17:28.5124489Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:17:45.3274677Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:17:45.3808281Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:17:45.3997261Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:17:53.7160496Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:18:24.2231068Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/tasks
+Request Data:
+{"name":"sdfdsf","description":"sdfdsf","status":"sdfdsf","projectId":"ea2a16f6-c634-473e-8733-d1a94a502341","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:18:42.5810561Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:18:42.6086346Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:18:47.7293779Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?searchTerm=sdfdsf&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=sdfdsf&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:18:47.7329505Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?searchTerm=sdfdsf&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=sdfdsf&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:19:02.0605044Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:19:02.1270897Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:19:02.1576158Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:19:05.0982410Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?searchTerm=sdfdsf&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=sdfdsf&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:19:05.1123224Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?searchTerm=sdfdsf&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=sdfdsf&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:19:12.0651501Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?searchTerm=sdfdsf&page=2&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=sdfdsf&page=2&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:19:12.0678244Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?searchTerm=sdfdsf&page=2&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=sdfdsf&page=2&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:19:17.7552422Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?searchTerm=sdfdsf&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=sdfdsf&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:19:17.7687469Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?searchTerm=sdfdsf&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=sdfdsf&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:20:05.8295901Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:20:05.8747254Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?searchTerm=sdfdsf&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=sdfdsf&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:20:05.9041036Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?searchTerm=sdfdsf&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=sdfdsf&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:20:18.0666817Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:22:57.2581092Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?searchTerm=sdfdsf&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=sdfdsf&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:23:07.6298314Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?searchTerm=sdfdsf&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=sdfdsf&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:23:42.1980428Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?searchTerm=sdfdsf&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=sdfdsf&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:23:42.2029058Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:23:42.2072581Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?searchTerm=sdfdsf&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=sdfdsf&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:24:01.6839526Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:24:06.3711683Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:24:06.4988607Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:24:06.5087978Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:24:15.9235448Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=2&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=2&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:24:15.9255256Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=2&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=2&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:24:19.1091547Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:24:19.1172073Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:24:31.8378126Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:24:31.8400591Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:24:32.9700215Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:24:42.0190833Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?SearchTerm=rtre
+Request Data:
+?SearchTerm=rtre
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:26:04.0548921Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects/65972dc1-3115-4aed-807f-5ea667442063
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:26:45.8376856Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?SearchTerm=sadsa
+Request Data:
+?SearchTerm=sadsa
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:27:16.3236832Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?SearchTerm=Workspace1
+Request Data:
+?SearchTerm=Workspace1
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:27:38.0751911Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:27:38.0756734Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:27:39.2431236Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:27:43.5168155Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:27:43.5721628Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:27:43.5882276Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:27:48.0583145Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?searchTerm=Workspace1&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=Workspace1&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:27:48.0652580Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?searchTerm=Workspace1&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=Workspace1&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:31:22.8203926Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?searchTerm=Workspace1&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=Workspace1&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:31:36.9118606Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:31:43.0959056Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:31:43.1913436Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:31:52.3692996Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:32:04.3845338Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?searchTerm=Workspace1&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=Workspace1&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:32:07.3948913Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?searchTerm=Workspace1&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=Workspace1&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:32:21.3734507Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?searchTerm=Workspace&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=Workspace&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:32:32.7897843Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?searchTerm=Workspace&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=Workspace&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:34:56.0408225Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/app-users/login
+Request Data:
+{"userName":"test@test.com","password":"Admin!123","rememberMe":false}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:34:58.0174825Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:35:06.1985465Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:35:06.2910395Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:35:06.2951535Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:44:12.5218275Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/app-users/login
+Request Data:
+{"userName":"test@test.com","password":"Admin!123","rememberMe":false}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:44:27.9830701Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:44:49.6007139Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:44:49.6808266Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:44:49.6866453Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:47:15.5228194Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/app-users/login
+Request Data:
+{"userName":"test@test.com","password":"Admin!123","rememberMe":false}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:47:26.5683258Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:47:34.5706992Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:47:34.6587041Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:47:34.6717155Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:56:53.3259887Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/app-users/login
+Request Data:
+{"userName":"test@test.com","password":"Admin!123","rememberMe":false}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:56:56.5810784Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:57:04.2758194Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:57:46.5969161Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?SearchTerm=work
+Request Data:
+?SearchTerm=work
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T20:58:47.1583735Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?SearchTerm=work
+Request Data:
+?SearchTerm=work
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:13:38.4141441Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:14:54.7927279Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?SearchTerm=Workspace1
+Request Data:
+?SearchTerm=Workspace1
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:15:52.9928378Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/app-users/login
+Request Data:
+{"userName":"test@test.com","password":"Admin!123","rememberMe":false}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:15:56.3336535Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:16:09.4720933Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:16:09.6189604Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:16:09.6274323Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:16:45.1219482Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?searchTerm=Workspace1&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=Workspace1&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:16:45.1253514Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?searchTerm=Workspace1&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=Workspace1&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:17:10.2020578Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:17:10.2562133Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:17:10.2688214Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:17:47.2277730Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?searchTerm=task1&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=task1&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:17:52.4918061Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?searchTerm=task1&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?searchTerm=task1&page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:18:03.2317938Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:18:11.3428633Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:20:46.3817205Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:24:19.6936413Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/app-users/login
+Request Data:
+{"userName":"test@test.com","password":"Admin!123","rememberMe":false}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:24:37.0363034Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:24:46.1017314Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:24:46.1700906Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:24:46.1801361Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:25:23.6590668Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:25:23.7154574Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/issues?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:25:23.7337925Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:25:36.3687659Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/issues?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:25:58.8300771Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:25:58.8672007Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:26:06.8484994Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/issues?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:27:32.8102145Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:28:37.3381240Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:28:37.5731295Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/issues?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:28:53.9231120Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:29:01.0828161Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:29:01.1631358Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/issues?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:29:05.9264079Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:30:22.3834937Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:30:22.4684175Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/issues?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:30:22.4856057Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:31:16.2359846Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:31:16.3412908Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/issues?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:31:16.3555405Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:31:37.4832607Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:32:14.6249881Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/issues
+Request Data:
+{"name":"gsdfg","description":"dsfg2","status":"dsf","projectId":"ea2a16f6-c634-473e-8733-d1a94a502341","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:32:21.0598168Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/issues?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:32:21.1390428Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/issues?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:32:26.7924971Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:32:26.8760277Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/issues?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:32:26.8834219Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:32:44.0924990Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:32:44.1594357Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:32:44.1597894Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/issues?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:32:46.9332696Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:32:54.8184641Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/issues/dd3e85bb-5726-42b0-bee0-1da585cac464
+Request Data:
+{"name":"gsdfg5","description":"dsfg25","status":"dsf5","projectId":"65972dc1-3115-4aed-807f-5ea667442063","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:32:59.7173237Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/issues?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:32:59.8263012Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/issues?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:33:07.2280256Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:33:07.3020175Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/issues?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:33:07.3129246Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:33:10.4030813Z
+Sender: 127.0.0.1
+Method: DELETE
+URI: /api/v1/issues/dd3e85bb-5726-42b0-bee0-1da585cac464
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:33:37.8619690Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:33:37.9356861Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/issues?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:33:39.0835214Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/issues?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:33:46.2187926Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/issues
+Request Data:
+{"name":"ertew","description":"ewrt","status":"wertew","projectId":"65972dc1-3115-4aed-807f-5ea667442063","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:33:46.2449042Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/issues?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:33:46.2610778Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/issues?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:33:55.6205747Z
+Sender: 127.0.0.1
+Method: DELETE
+URI: /api/v1/issues/b7eacd5c-4431-4892-9b80-e6f7691d5fa0
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:33:55.6413064Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/issues?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:33:56.7199353Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/issues?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:34:55.6054140Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:35:00.9841726Z
+Sender: 127.0.0.1
+Method: POST
+URI: /api/v1/issues
+Request Data:
+{"name":"dsfdsa","description":"sadf","status":"asdfsa","projectId":"1ec43a22-5f97-42d5-8c2f-0463e7370e24","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:35:01.0026513Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/issues?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:35:01.0176885Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/issues?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:35:04.7117854Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:35:43.3412061Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:35:50.0532794Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:36:14.0689858Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:36:22.5420343Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:36:22.6445031Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/workspaces?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:36:24.0496096Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:36:26.9215933Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:37:00.1378587Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:37:08.1444790Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/projects?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=100000&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:37:40.1439109Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:37:41.5194234Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:37:41.5937482Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:37:48.1603648Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:37:48.2351072Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:40:01.9054118Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:40:12.9998602Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:40:19.1567994Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:41:46.4890855Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:41:51.7273751Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:41:57.1340320Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:42:48.4130896Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:43:14.6835567Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:45:42.5952174Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:45:49.6756356Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:46:16.2172885Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:46:46.3810212Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:47:05.3115650Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/tasks/c9ef5f9b-b217-4617-a1a7-2fba7c82a33c
+Request Data:
+{"name":"task1","description":"task1","status":"in-progress","projectId":"ea2a16f6-c634-473e-8733-d1a94a502341","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:47:05.5436893Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/tasks/c9ef5f9b-b217-4617-a1a7-2fba7c82a33c
+Request Data:
+{"name":"task1","description":"task1","status":"todo","projectId":"ea2a16f6-c634-473e-8733-d1a94a502341","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:47:05.6452591Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/tasks/b0643560-0c31-40dc-9be7-9e5099ed8a5e
+Request Data:
+{"name":"task2","description":"task2","status":"todo","projectId":"ea2a16f6-c634-473e-8733-d1a94a502341","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:47:05.8220141Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/tasks/c9ef5f9b-b217-4617-a1a7-2fba7c82a33c
+Request Data:
+{"name":"task1","description":"task1","status":"todo","projectId":"ea2a16f6-c634-473e-8733-d1a94a502341","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:47:08.3591494Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:47:08.4611643Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:47:11.0744805Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/tasks/c9ef5f9b-b217-4617-a1a7-2fba7c82a33c
+Request Data:
+{"name":"task1","description":"task1","status":"todo","projectId":"ea2a16f6-c634-473e-8733-d1a94a502341","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:47:11.3167525Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/tasks/c9ef5f9b-b217-4617-a1a7-2fba7c82a33c
+Request Data:
+{"name":"task1","description":"task1","status":"in-progress","projectId":"ea2a16f6-c634-473e-8733-d1a94a502341","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:47:11.3177462Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/tasks/ebb31a0b-44e2-4b2f-a734-0944934bf081
+Request Data:
+{"name":"task4","description":"task4","status":"in-progress","projectId":"ea2a16f6-c634-473e-8733-d1a94a502341","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:47:11.6770479Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/tasks/c9ef5f9b-b217-4617-a1a7-2fba7c82a33c
+Request Data:
+{"name":"task1","description":"task1","status":"in-progress","projectId":"ea2a16f6-c634-473e-8733-d1a94a502341","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:47:13.4518438Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:47:13.5185147Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:47:16.5079733Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/tasks/ebb31a0b-44e2-4b2f-a734-0944934bf081
+Request Data:
+{"name":"task4","description":"task4","status":"in-progress","projectId":"ea2a16f6-c634-473e-8733-d1a94a502341","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:47:17.0912980Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/tasks/ebb31a0b-44e2-4b2f-a734-0944934bf081
+Request Data:
+{"name":"task4","description":"task4","status":"in-progress","projectId":"ea2a16f6-c634-473e-8733-d1a94a502341","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:47:17.0958510Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/tasks/c9ef5f9b-b217-4617-a1a7-2fba7c82a33c
+Request Data:
+{"name":"task1","description":"task1","status":"in-progress","projectId":"ea2a16f6-c634-473e-8733-d1a94a502341","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:47:17.2331673Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/tasks/b0643560-0c31-40dc-9be7-9e5099ed8a5e
+Request Data:
+{"name":"task2","description":"task2","status":"todo","projectId":"ea2a16f6-c634-473e-8733-d1a94a502341","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:47:17.7241207Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/tasks/b0643560-0c31-40dc-9be7-9e5099ed8a5e
+Request Data:
+{"name":"task2","description":"task2","status":"todo","projectId":"ea2a16f6-c634-473e-8733-d1a94a502341","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:47:21.5732761Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:47:21.6304306Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:47:25.3422707Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/tasks/ebb31a0b-44e2-4b2f-a734-0944934bf081
+Request Data:
+{"name":"task4","description":"task4","status":"in-progress","projectId":"ea2a16f6-c634-473e-8733-d1a94a502341","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:47:25.3429940Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/tasks/ebb31a0b-44e2-4b2f-a734-0944934bf081
+Request Data:
+{"name":"task4","description":"task4","status":"in-progress","projectId":"ea2a16f6-c634-473e-8733-d1a94a502341","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:47:25.6829635Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/tasks/0684dbeb-2f3e-4086-bfb5-6b34bf1f612b
+Request Data:
+{"name":"task3","description":"task3","status":"todo","projectId":"ea2a16f6-c634-473e-8733-d1a94a502341","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:47:25.6834490Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/tasks/ebb31a0b-44e2-4b2f-a734-0944934bf081
+Request Data:
+{"name":"task4","description":"task4","status":"todo","projectId":"ea2a16f6-c634-473e-8733-d1a94a502341","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:47:25.7587852Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/tasks/ebb31a0b-44e2-4b2f-a734-0944934bf081
+Request Data:
+{"name":"task4","description":"task4","status":"todo","projectId":"ea2a16f6-c634-473e-8733-d1a94a502341","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:47:26.5489984Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/tasks/ebb31a0b-44e2-4b2f-a734-0944934bf081
+Request Data:
+{"name":"task4","description":"task4","status":"todo","projectId":"ea2a16f6-c634-473e-8733-d1a94a502341","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:47:30.2841292Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:47:30.3526941Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:47:33.6381565Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/tasks/ebb31a0b-44e2-4b2f-a734-0944934bf081
+Request Data:
+{"name":"task4","description":"task4","status":"todo","projectId":"ea2a16f6-c634-473e-8733-d1a94a502341","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:47:33.6398469Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/tasks/ebb31a0b-44e2-4b2f-a734-0944934bf081
+Request Data:
+{"name":"task4","description":"task4","status":"todo","projectId":"ea2a16f6-c634-473e-8733-d1a94a502341","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:47:34.8867529Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/tasks/f272e77c-e5b9-47d0-b520-2a9c835c1123
+Request Data:
+{"name":"task5","description":"task5","status":"in-progress","projectId":"ea2a16f6-c634-473e-8733-d1a94a502341","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:47:35.4211501Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/tasks/f272e77c-e5b9-47d0-b520-2a9c835c1123
+Request Data:
+{"name":"task5","description":"task5","status":"in-progress","projectId":"ea2a16f6-c634-473e-8733-d1a94a502341","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:47:35.4240635Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/tasks/ebb31a0b-44e2-4b2f-a734-0944934bf081
+Request Data:
+{"name":"task4","description":"task4","status":"in-progress","projectId":"ea2a16f6-c634-473e-8733-d1a94a502341","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:47:35.7444180Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/tasks/ebb31a0b-44e2-4b2f-a734-0944934bf081
+Request Data:
+{"name":"task4","description":"task4","status":"in-progress","projectId":"ea2a16f6-c634-473e-8733-d1a94a502341","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:47:35.7465651Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/tasks/1b82653b-dabb-49b8-8873-59c78c915ba4
+Request Data:
+{"name":"task6","description":"task6","status":"in-progress","projectId":"ea2a16f6-c634-473e-8733-d1a94a502341","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:47:36.0645516Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/tasks/1b82653b-dabb-49b8-8873-59c78c915ba4
+Request Data:
+{"name":"task6","description":"task6","status":"in-progress","projectId":"ea2a16f6-c634-473e-8733-d1a94a502341","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:47:36.8810853Z
+Sender: 127.0.0.1
+Method: PUT
+URI: /api/v1/tasks/ebb31a0b-44e2-4b2f-a734-0944934bf081
+Request Data:
+{"name":"task4","description":"task4","status":"in-progress","projectId":"ea2a16f6-c634-473e-8733-d1a94a502341","userDataAccessLevel":0}
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:47:39.1925539Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/app-users/e3c222fb-976c-4dd8-9a81-da5507deebd9
+Request Data:
+
+-------------------------
+
+------ Request Log ------
+Timestamp: 2025-01-19T21:47:39.2497933Z
+Sender: 127.0.0.1
+Method: GET
+URI: /api/v1/tasks?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+Request Data:
+?page=1&pageSize=10&sortColumn=name&sortOrder=asc
+-------------------------
+

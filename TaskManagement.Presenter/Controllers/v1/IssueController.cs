@@ -6,7 +6,7 @@ using TaskManagement.Presenter.Controllers.Base.v1;
 
 namespace TaskManagement.Presenter.Controllers.v1
 {
-    public class IssueController : BaseBasicEntityController<Guid, Issue, IssueReadDto, IssueCreateDto, IssueUpdateDto>
+    public class IssueController : BaseEntityWithRelatedOneController<Guid, Issue, Project, IssueReadDto, IssueCreateDto, IssueUpdateDto>
     {
         private readonly IIssueService _service;
 

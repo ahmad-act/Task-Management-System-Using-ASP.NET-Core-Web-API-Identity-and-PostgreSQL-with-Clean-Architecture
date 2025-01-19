@@ -57,7 +57,7 @@ namespace TaskManagement.Presenter.Controllers.Base.v1
         [SwaggerResponse(404, $"{nameof(T)} not found")]
         [SwaggerResponse(401, "Invalid token")]
         [SwaggerResponse(500, "Internal server error")]
-        public async Task<IActionResult> ListAsync([FromQuery] ListFilter listFilter)
+        public async Task<IActionResult> ListAsync([FromQuery] QueryParams queryParams)
         {
             if (!ModelState.IsValid)
             {
@@ -70,7 +70,7 @@ namespace TaskManagement.Presenter.Controllers.Base.v1
                 return BadRequest(ModelState);
             }
 
-            var result = await _service.ListAsync(listFilter);
+            var result = await _service.ListAsync(queryParams);
 
             return result.Match<IActionResult>(
                 value => Ok(ApiResponse.Success(value, "Data retrieved successfully")),  // Success: return HTTP 200

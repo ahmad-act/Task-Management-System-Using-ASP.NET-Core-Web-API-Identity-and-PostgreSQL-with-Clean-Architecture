@@ -14,7 +14,7 @@ namespace TaskManagement.Domain.Entities
 
         // Navigation Property
         public virtual Workspace? Workspace { get; set; }
-        public virtual ICollection<Task>? Task { get; set; }
-        public virtual ICollection<Issue>? Issue { get; set; }
+        //public virtual ICollection<Task>? Task { get; set; }
+        //public virtual ICollection<Issue>? Issue { get; set; }
     }
 }
