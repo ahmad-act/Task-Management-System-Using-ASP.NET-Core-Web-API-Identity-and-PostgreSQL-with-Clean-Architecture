@@ -27,12 +27,11 @@ namespace TaskManagement.Application.Validation.AppUser
 
             // Validate FieldName: Required, minimum length of 3, and maximum length of 100
             RuleFor(updateDto => updateDto.FirstName)
-                .NotEmpty()
-                .WithMessage("First name is required.")
-                .MinimumLength(2)
-                .WithMessage("First name must not be less than 2 characters.")
-                .MaximumLength(30)
-                .WithMessage("First name must not exceed 30 characters.");
+                .Cascade(CascadeMode.Stop)
+                .Must(description => string.IsNullOrEmpty(description) || description.Length >= 2)
+                .WithMessage("First name must not be less than 2 characters if provided.")
+                .Must(description => string.IsNullOrEmpty(description) || description.Length <= 30)
+                .WithMessage("First name must not exceed 30 characters if provided.");
 
             // Validate Description: Optional but must meet length requirements if provided
             RuleFor(updateDto => updateDto.LastName)

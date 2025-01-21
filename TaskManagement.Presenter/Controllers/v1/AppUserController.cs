@@ -48,7 +48,7 @@ namespace TaskManagement.Presenter.Controllers.v1
             OptionResult<Guid> result = await _service.CreateAsync(entity);
 
             return result.Match<IActionResult>(
-                value => Created(string.Empty, new { id = Convert.ToString(value), message = $"{nameof(AppUser)} registered successfully" }),          // Success: return HTTP 200
+                value => Created(string.Empty, ApiResponse.Success(value, "Data added successfully")),      // Success: return HTTP 200
                 error =>
                 {
                     return error[0].StatusCode switch
@@ -94,7 +94,7 @@ namespace TaskManagement.Presenter.Controllers.v1
 
                     Response.Cookies.Append(_jwtSettings.JwtTokenName, jwt, _jwtSettings.GetCookieOption());
 
-                    return Ok(jwt);
+                    return Ok(ApiResponse.Success(jwt, "JWT created successfully"));
 
                     //return Ok("Successfully logged in.");
                 },
@@ -120,7 +120,7 @@ namespace TaskManagement.Presenter.Controllers.v1
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
-            return Ok("User logged out successfully.");
+            return Ok(ApiResponse.Success(null, "User logged out successfully."));
         }
 
         [HttpGet("profile")]
@@ -140,7 +140,7 @@ namespace TaskManagement.Presenter.Controllers.v1
             var result = await _appUserService.GetAsync(userId.ToKey<Guid>());
 
             return result.Match<IActionResult>(
-                value => Ok(value),// Success: return HTTP 200
+                value => Ok(ApiResponse.Success(value, "Got profile successfully.")),// Success: return HTTP 200
                 error =>
                 {
                     return error[0].StatusCode switch

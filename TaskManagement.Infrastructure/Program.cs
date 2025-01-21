@@ -101,7 +101,7 @@ try
     {
         options.AddPolicy("AllowSpecificOrigins", policy =>
         {
-            policy.WithOrigins("https://localhost:3000", "http://localhost:3000")   // Add allowed origins
+            policy.WithOrigins("https://localhost:3000", "http://localhost:3000", "https://localhost:3001", "http://localhost:3001", "https://localhost:3002", "http://localhost:3002")   // Add allowed origins
                   .AllowAnyHeader()                                                 // Allow any headers (e.g., Authorization)
                   .AllowAnyMethod() // Allow any HTTP methods (GET, POST, etc.)
                   .AllowCredentials(); 
