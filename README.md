@@ -1,12 +1,11 @@
-﻿# Clean Architecture Template
+﻿# Task Management API
 ---
 
 Task Management API is a project built using Clean Architecture principles, designed to manage and organize tasks efficiently. The application is structured into layers, ensuring high maintainability, testability, and scalability. By following Clean Architecture, the project enables separation of concerns and ensures the independence of frameworks and libraries, making it adaptable and easy to modify or extend.
 
 ## Table of Contents
 
-- [Clean Architecture Template](#clean-architecture-template)
-  - [Table of Contents](#table-of-contents)
+- [Task Management API](#task-management-api)
   - [Features](#features)
     - [Technical Features](#technical-features)
     - [Functional Features](#functional-features)
