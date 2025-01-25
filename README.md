@@ -1,7 +1,7 @@
 ﻿# Clean Architecture Template
 ---
 
-CleanArchitecture is a template project that follows the principles of Clean Architecture. It separates the application into layers, promoting maintainability, testability, and scalability. This architecture allows for the separation of concerns and the independence of frameworks and libraries.
+Task Management API is a project built using Clean Architecture principles, designed to manage and organize tasks efficiently. The application is structured into layers, ensuring high maintainability, testability, and scalability. By following Clean Architecture, the project enables separation of concerns and ensures the independence of frameworks and libraries, making it adaptable and easy to modify or extend.
 
 ## Table of Contents
 
